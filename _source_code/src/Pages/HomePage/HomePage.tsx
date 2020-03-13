@@ -12,14 +12,16 @@ import iCatrina from '../../images/Screen Shot 2018-12-07 at 1.28.54 PM.png'
 
 export default class HomePageView extends Component {
 
-    constructor(props : any) {
+    constructor(props: any) {
         super(props);
         this.state = {};
     }
 
-    componentDidMount() {}
+    componentDidMount() {
+    }
 
-    componentWillUnmount() {}
+    componentWillUnmount() {
+    }
 
     render() {
         const state = this.state as any;
@@ -31,20 +33,24 @@ export default class HomePageView extends Component {
                 </Helmet>
                 <div className={styles.homePage + ' ' + appStyles["page-content"]}>
                     <Container fluid={true} className={styles.hero}>
-
-                        <Col className={appStyles["center-div"]}>
-                            <img width="54" src={LogoPrimary} alt=""/>
-                            <h1>Teachers are the innovators education has been waiting for.</h1>
-                            <p>Preparing our students to be the problem solvers of tomorrow
-                            </p>
-                            <div>
-                                <Button link={"#!"} label={"JOIN US"} aligment={"center-div"}/>
-                            </div>
-                        </Col>
+                        <Row>
+                            <Col >
+                                <div className={appStyles["center-div"]}>
+                                    <img width="54" src={LogoPrimary} alt=""/>
+                                    <h1>Teachers are the innovators education has been waiting for.</h1>
+                                    <p>Preparing our students to be the problem solvers of tomorrow
+                                    </p>
+                                    <div>
+                                        <Button link={"#!"} label={"JOIN US"} aligment={"center-div"}/>
+                                    </div>
+                                </div>
+                            </Col>
+                        </Row>
 
                     </Container>
                     <div className={styles.main}>
-                        <div className={styles.cap}>Teachers getting to know each other at the Making It Real prototyping workshop.
+                        <div className={styles.cap}>Teachers getting to know each other at the Making It Real
+                            prototyping workshop.
                         </div>
                     </div>
                     <Container fluid={true} className={styles.wellcome}>
@@ -133,7 +139,8 @@ export default class HomePageView extends Component {
                                 <div className={styles.Limg}></div>
                                 <div className={styles.Ltext}>
                                     <h2>Chapters</h2>
-                                    <p>Activate and sustain a culture of creativity throughout your district or region.</p>
+                                    <p>Activate and sustain a culture of creativity throughout your district or
+                                        region.</p>
                                 </div>
                             </a>
 

@@ -4,6 +4,8 @@ class globalData {
 
     // public AppName: string = "חנות מוצרי חשמל";
 
+      //https://avivabachi.github.io/TeachersGuild
+
       public readonly baseRoute:string = (navigator.userAgent === "ReactSnap") ? "" : "/TeachersGuild"; // /app
 
     //
