@@ -7,12 +7,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/avivabachi/app"
+    "url": "https://github.com/AvivAbachi/TeachersGuild"
   },
   "keywords": [
     "web components"
   ],
-  "homepage": "",
+  "homepage": "https://avivabachi.github.io/TeachersGuild",
   "dependencies": {
     "@babel/core": "7.8.4",
     "@svgr/webpack": "4.3.3",

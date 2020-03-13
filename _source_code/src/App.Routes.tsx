@@ -33,16 +33,15 @@ export default class AppRoutes extends Component {
         // let baseRoute = (navigator.userAgent === "ReactSnap")
         //     ? ""
         //     : ""; //github pages support: "/app";
-        let baseRoute ="";
         return (
             <Row>
                 <Col>
                     <Switch>
-                        <Route path={baseRoute + "/"} exact component={HomePageView}/>
+                        <Route path={"/"} exact component={HomePageView}/>
 
-                        <Route path={baseRoute + "/About"} component={AboutView}/>
-                        <Route path={baseRoute + "/404"} component={NotFound}/>
-                        <Route component={() => <Redirect to={baseRoute + "/404"}/>}/>
+                        <Route path={"/About"} component={AboutView}/>
+                        <Route path={"/404"} component={NotFound}/>
+                        <Route component={() => <Redirect to={"/404"}/>}/>
                     </Switch>
                 </Col>
             </Row>

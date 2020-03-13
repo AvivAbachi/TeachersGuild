@@ -1,10 +1,10 @@
 class globalData {
-    constructor() {
-    }
+    // constructor() {
+    // }
 
     // public AppName: string = "חנות מוצרי חשמל";
 
-      public readonly baseRoute:string = (navigator.userAgent === "ReactSnap") ? "" : ""; // /app
+      public readonly baseRoute:string = (navigator.userAgent === "ReactSnap") ? "" : "/TeachersGuild"; // /app
 
     //
     // isMobile() {

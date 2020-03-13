@@ -71,16 +71,11 @@ export default class MenuView extends Component <{},
     };
 
     render() {
-        let baseRoute = (navigator.userAgent === "ReactSnap")
-            ? ""
-            : "";
-
-
         return (
 
             <div>
                 <nav>
-                    <Link to={baseRoute + "/"}><img src={TGLogo} alt="Logo" height="34px"/></Link>
+                    <Link to={"/"}><img src={TGLogo} alt="Logo" height="34px"/></Link>
                     <div>
                         {this.state.isMobile
                             ? <MenuMobileView clickCallback={this.CheckedM}/>
