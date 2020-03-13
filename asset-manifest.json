@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/TeachersGuild/static/css/main.64f8e2c8.chunk.css",
+    "main.js": "/TeachersGuild/static/js/main.ad2dbdb7.chunk.js",
+    "main.js.map": "/TeachersGuild/static/js/main.ad2dbdb7.chunk.js.map",
+    "runtime-main.js": "/TeachersGuild/static/js/runtime-main.17ead4d3.js",
+    "runtime-main.js.map": "/TeachersGuild/static/js/runtime-main.17ead4d3.js.map",
+    "static/js/2.8713146d.chunk.js": "/TeachersGuild/static/js/2.8713146d.chunk.js",
+    "static/js/2.8713146d.chunk.js.map": "/TeachersGuild/static/js/2.8713146d.chunk.js.map",
+    "index.html": "/TeachersGuild/index.html",
+    "precache-manifest.c6534b11f1c697d51099119971dab59d.js": "/TeachersGuild/precache-manifest.c6534b11f1c697d51099119971dab59d.js",
+    "service-worker.js": "/TeachersGuild/service-worker.js",
+    "static/css/main.64f8e2c8.chunk.css.map": "/TeachersGuild/static/css/main.64f8e2c8.chunk.css.map",
+    "static/js/2.8713146d.chunk.js.LICENSE.txt": "/TeachersGuild/static/js/2.8713146d.chunk.js.LICENSE.txt",
+    "static/media/HomePage.module.scss": "/TeachersGuild/static/media/o.3bedf52a.png",
+    "static/media/App.module.scss": "/TeachersGuild/static/media/HelveticaNeueLTPro-UltLt.2ff9f3fb.woff",
+    "static/media/Screen Shot 2018-12-07 at 1.28.54 PM.png": "/TeachersGuild/static/media/Screen Shot 2018-12-07 at 1.28.54 PM.49c9e788.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.17ead4d3.js",
+    "static/js/2.8713146d.chunk.js",
+    "static/css/main.64f8e2c8.chunk.css",
+    "static/js/main.ad2dbdb7.chunk.js"
+  ]
+}
