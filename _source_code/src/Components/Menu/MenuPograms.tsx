@@ -1,23 +1,24 @@
 import React, {Component} from 'react'
 import styles from './MenuPograms.module.scss';
-import {Link} from 'react-router-dom';
+import GlobalData from "../../Services/GlobalData";
+import {ICallCloseProps} from '../../Models/interfaces'
 
-export default class Pograms extends Component {
+export default class Pograms extends Component <ICallCloseProps,{}>{
     render() {
         return (
             <div className={styles.program}>
                 <div className={styles.submenu}>
-                    <Link to="/programs/collaborations">
+                    <a href={GlobalData.noLink} onClick={this.props.CallClose} >
                         <h2>Collaborations</h2>
                         <p>Contribute your ideas to online challenges and develop best-in-class solutions.</p>
-                    </Link>
+                    </a>
                 </div>
                 <div className={styles.submenu}>
-                    <Link to="/programs/chapters">
+                    <a href={GlobalData.noLink} onClick={this.props.CallClose}>
                         <h2>Chapters</h2>
                         <p>Activate and sustain a culture of creative leadership throughout your
                             district or region.</p>
-                    </Link>
+                    </a>
                 </div>
             </div>
         )

@@ -13,24 +13,26 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
     div {
         align-items: center;
         display: flex;
         justify-self: end;
+
         div {
             margin-left: 29px;
         }
     }
 
-    a {
-        font-weight: bold;
+    .login a {
+        font-weight: 900;
         cursor: pointer;
-        font-size: 16px;
-        color: $cDark !important;
+        font-size: 15px;
+        color: $cDark;
 
-        :hover {
-            text-decoration: none;
+        text-decoration: none !important;
+        a:active,
+        a:hover {
             color: white !important;
         }
     }

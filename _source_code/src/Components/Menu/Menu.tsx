@@ -1,96 +1,103 @@
 import React, {Component} from 'react';
-import {Link ,withRouter} from "react-router-dom";
+import {Link} from "react-router-dom";
 
 import styles from './Menu.module.scss';
 
 import MenuMobileView from './MenuMobileBtn';
 import MenuDesktopView from './MenuDesktop';
-import Pog from './MenuPograms'
-import Mobile from './MenuMobile'
+import MenuPograms from './MenuPograms'
+import MenuMobile from './MenuMobile'
 
 import TGLogo from "./TGLogo.png";
+import GlobalData from '../../Services/GlobalData';
 
-interface IState {
-    isMobile: boolean;
-    mobileSub: boolean;
-    ProSub: boolean;
-    menuIcon: string;
+interface Istate {
+    isMobile : boolean;
+    mobileSub : boolean;
+    programSub : boolean;
+    btnColor : string;
+    menuIcon : string
 }
 
-export default class MenuView extends Component <{},
-    IState> {
+export default class MenuView extends Component < {},
+Istate > {
 
-    constructor(props: any) {
+    constructor(props : any) {
         super(props);
         this.state = {
             isMobile: false,
             mobileSub: false,
-            ProSub: false,
-            menuIcon: "fas fa-angle-down"
-        };
+            programSub: false,
+            btnColor: "",
+            menuIcon : "fas fa-angle-down"
+        }
+
     }
 
     componentDidMount() {
         this.View();
         window.addEventListener('resize', this.View.bind(this))
-    }
-    componentDidUpdate() {
-        // this.View();
-    }
-
-    componentWillUnmount(): void {
+    } // componentDidUpdate() { //     this.View(); // }
+    componentWillUnmount() {
         window.removeEventListener('resize', this.View.bind(this))
     }
-
 
     View = () => {
         if (window.innerWidth <= 980 || window.screen.width <= 980) {
 
-            this.setState({isMobile: true, ProSub: false, menuIcon: "fas fa-angle-down"})
+            this.setState({isMobile: true})
         } else {
-            this.setState({isMobile: false, mobileSub: false})
+            this.setState({isMobile: false})
         }
-
+        this.closeSubs()
     };
-
-    CheckedM = () => {
+    openMobileSub = () => {
         this.setState({
-            mobileSub: (!this.state.mobileSub)
-        })
+            mobileSub: !this.state.mobileSub})
+        this.state.mobileSub
+            ? this.setState({btnColor: ""})
+            : this.setState({btnColor: "white"})
     };
-    CheckedP = () => {
-        let checked = !this.state.ProSub;
+    openProgramSub = () => {
         this.setState({
-            ProSub: checked,
-            menuIcon: checked
-                ? "fas fa-angle-up"
-                : "fas fa-angle-down"
-        });
-
-        return false;
+            programSub: !this.state.programSub})
+            this.state.programSub
+            ? this.setState({menuIcon: "fas fa-angle-down"})
+            : this.setState({menuIcon: "fas fa-angle-up"});
+    };
+    closeSubs = () => {
+        this.setState({programSub: false, mobileSub: false,menuIcon: "fas fa-angle-down",btnColor:""});
+        
     };
 
     render() {
         return (
-
             <div>
                 <nav>
                     <Link to={"/"}><img src={TGLogo} alt="Logo" height="34px"/></Link>
-                    <div>
-                        {this.state.isMobile
-                            ? <MenuMobileView clickCallback={this.CheckedM}/>
-                            : <MenuDesktopView clickCallback={this.CheckedP} mIcon={this.state.menuIcon}/>}
+                    <div>{this.state.isMobile
+                            ? <MenuMobileView
+                                    btnColor={this.state.btnColor}
+                                    clickCallback={this.openMobileSub}
+                                    mobileSub={this.state.mobileSub}
+                                    CallClose={this.closeSubs}/>
+                            : <MenuDesktopView
+                            menuIcon={this.state.menuIcon}
+                                clickCallback={this.openProgramSub}
+                                programSub={this.state.programSub}
+                                CallClose={this.closeSubs}/>}
                         <div className={styles.login}>
-                            <Link to="#!">SIGN UP<br/>
-                                <small>or</small> LOGIN</Link>
+                            <a href={GlobalData.noLink}>SIGN UP<br/>
+                                <small>or</small>
+                                LOGIN</a>
                         </div>
                     </div>
                 </nav>
                 {this.state.mobileSub
-                    ? <Mobile/>
+                    ? <MenuMobile CallClose={this.closeSubs}/>
                     : null}
-                {this.state.ProSub
-                    ? <Pog/>
+                {this.state.programSub
+                    ? <MenuPograms CallClose={this.closeSubs}/>
                     : null}
             </div>
 

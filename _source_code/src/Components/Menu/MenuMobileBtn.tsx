@@ -1,16 +1,31 @@
 import React, {Component} from 'react';
-import {ICallbackActionProps} from "../../Models/interfaces";
+import {ICallbackActionProps, ICallCloseProps} from '../../Models/interfaces'
 
-export default class MobileBtn extends Component <ICallbackActionProps, {}> {
-    constructor(props: ICallbackActionProps) {
+interface Iprops extends ICallbackActionProps,
+ICallCloseProps {mobileSub: boolean, btnColor: string}
+
+interface Istate {}
+
+export default class menuMobileBtn extends Component < Iprops,
+Istate > {
+    constructor(props : Iprops) {
         super(props);
-        this.state = {};
+        this.state = {
+ 
+        };
     }
 
-    render() {
-        return (
-            <a href="#!" onClick={this.props.clickCallback} className="fas fa-bars  fa-2x"/>
+    
 
-        )
+
+    render() {
+        return (<i
+            key={'dsa'}
+            onClick={this.props.clickCallback}
+            className={"fas fa-bars fa-2x"}
+            style={{
+            cursor: "pointer",
+            color: this.props.btnColor
+        }}/>)
     }
 }

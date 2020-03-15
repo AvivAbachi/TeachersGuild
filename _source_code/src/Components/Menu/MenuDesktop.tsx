@@ -1,43 +1,43 @@
 import React, {Component} from 'react';
 import styles from './MenuDesktop.module.scss';
 import {NavLink} from 'react-router-dom';
-import {ICallbackActionProps} from "../../Models/interfaces";
+import GlobalData from "../../Services/GlobalData";
+import {ICallbackActionProps, ICallCloseProps} from '../../Models/interfaces'
 
-interface IProps extends ICallbackActionProps {
-    mIcon : string;
+interface Iprops extends ICallbackActionProps , ICallCloseProps {
+    programSub : boolean;
+    menuIcon? : string;
+
 }
 
-export default class Desktop extends Component <IProps , {} > {
-
-    constructor(props : IProps) {
+export default class Desktop extends Component < Iprops,
+{} > {
+    constructor(props : Iprops) {
         super(props);
-        this.state = {};
+        this.state = {
+           
+        };
     }
 
-    componentDidMount() {}
-
-    componentWillUnmount() {}
 
     render() {
-
         return (
-
             <ul className={styles.menu}>
                 <li>
-                    <p onClick={this.props.clickCallback}>Programs<i className={this.props.mIcon}/>
+                    <p  onClick={this.props.CallClose}>Programs<i className={this.props.menuIcon}/>
                     </p>
                 </li>
                 <li>
-                    <a href="#!">Approach</a>
+                    <a href={GlobalData.noLink} onClick={this.props.CallClose}>Approach</a>
+                </li>
+                <li> 
+                    <a href={GlobalData.noLink} onClick={this.props.CallClose}>Solutions</a>
                 </li>
                 <li>
-                    <a href="#!">Solutions</a>
+                    <NavLink activeClassName={styles.active} to="/About" onClick={this.props.CallClose}>About US</NavLink>
                 </li>
                 <li>
-                    <NavLink activeClassName={styles.active} to="/About">About US</NavLink>
-                </li>
-                <li>
-                    <a href="#!">Work With Us</a>
+                    <a href={GlobalData.noLink} onClick={this.props.CallClose}>Work With Us</a>
                 </li>
             </ul>
 

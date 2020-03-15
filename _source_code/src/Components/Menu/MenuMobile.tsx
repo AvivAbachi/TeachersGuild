@@ -1,17 +1,20 @@
 import React, {Component} from 'react';
-import { NavLink} from "reactstrap";
+import {NavLink} from 'react-router-dom';
 import styles from './MenuMobile.module.scss';
+import GlobalData from "../../Services/GlobalData";
+import {ICallCloseProps} from '../../Models/interfaces'
 
-export default class Mobile extends Component {
+
+export default class Mobile extends Component<ICallCloseProps,{}> {
     render() {
         return (
             <div className={styles.mNav}>
-                <NavLink link={"#!"}>Programs</NavLink>
-                <NavLink link={"#!"}>Collaborations</NavLink>
-                <NavLink link={"#!"}>Chapters</NavLink>
-                <NavLink link={"#!"}>Approach</NavLink>
-                <NavLink link="/about">About US</NavLink>
-                <NavLink link={"#!"}>Work With Us</NavLink>
+                <a href={GlobalData.noLink} onClick={this.props.CallClose}>Programs</a>
+                <a href={GlobalData.noLink} onClick={this.props.CallClose}>Collaborations</a>
+                <a href={GlobalData.noLink} onClick={this.props.CallClose}>Chapters</a>
+                <a href={GlobalData.noLink} onClick={this.props.CallClose}>Approach</a>
+                <NavLink activeClassName={styles.active} to="/About" onClick={this.props.CallClose}>About US</NavLink>
+                <a href={GlobalData.noLink} onClick={this.props.CallClose}>Work With Us</a>
             </div>
         );
     }

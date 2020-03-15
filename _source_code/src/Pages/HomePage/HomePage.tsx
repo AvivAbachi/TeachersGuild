@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-
+import GlobalData from "../../Services/GlobalData";
 import appStyles from '../../App.module.scss';
 import Button from '../../Components/Button/Button';
 import styles from './HomePage.module.scss';
@@ -14,17 +14,16 @@ export default class HomePageView extends Component {
 
     constructor(props: any) {
         super(props);
-        this.state = {};
     }
 
     componentDidMount() {
+
     }
 
     componentWillUnmount() {
     }
 
     render() {
-        const state = this.state as any;
         return (
             <div className={appStyles.page}>
                 <Helmet>
@@ -41,12 +40,11 @@ export default class HomePageView extends Component {
                                     <p>Preparing our students to be the problem solvers of tomorrow
                                     </p>
                                     <div>
-                                        <Button link={"#!"} label={"JOIN US"} aligment={"center-div"}/>
+                                        <Button link={GlobalData.noLink} label={"JOIN US"} aligment={"center-div"}/>
                                     </div>
                                 </div>
                             </Col>
                         </Row>
-
                     </Container>
                     <div className={styles.main}>
                         <div className={styles.cap}>Teachers getting to know each other at the Making It Real
@@ -63,7 +61,7 @@ export default class HomePageView extends Component {
                                 Teachers tap into their inner designer by trying new ideas and discovering what
                                 works and why for their students and schools.</p>
                             <div>
-                                <Button link={"#!"} label={"LEARN DESIGN THINKING"} aligment={"left-align-div"}/>
+                                <Button link={GlobalData.noLink} label={"LEARN DESIGN THINKING"} aligment={"left-align-div"}/>
                             </div>
                         </Col>
                     </Container>
@@ -87,13 +85,13 @@ export default class HomePageView extends Component {
 
                                 Celebrate the end of our year-long design-journey and hear from teachers about
                                 their impactful ideas!<br/>
-                                <a href={"#!"}>Lakeland Community College, OH | April 25</a><br/>
-                                <a href={"#!"}>St. Vrain, CO | April 30</a><br/>
-                                <a href={"#!"}>Gwinnett, GA | May 2
+                                <a href={GlobalData.noLink}>Lakeland Community College, OH | April 25</a><br/>
+                                <a href={GlobalData.noLink}>St. Vrain, CO | April 30</a><br/>
+                                <a href={GlobalData.noLink}>Gwinnett, GA | May 2
                                 </a><br/>
-                                <a href={"#!"}>Vista, CA | May 8</a><br/>
-                                <a href={"#!"}>Oakland, CA | May 9</a><br/>
-                                <a href={"#!"}>New York, NY | May 14</a><br/>
+                                <a href={GlobalData.noLink}>Vista, CA | May 8</a><br/>
+                                <a href={GlobalData.noLink}>Oakland, CA | May 9</a><br/>
+                                <a href={GlobalData.noLink}>New York, NY | May 14</a><br/>
                                 Fremont, CA | May 15 (Event Page In Progress)
                             </div>
                             <div>
@@ -101,7 +99,7 @@ export default class HomePageView extends Component {
                                 <div>
                                     <span>
                                         <h4>
-                                            <a href={"#!"}>Catrina Estrada</a>
+                                            <a href={GlobalData.noLink}>Catrina Estrada</a>
                                         </h4>
                                         Assistant Principal
                                         <br/>Erie, Colorado
@@ -121,12 +119,12 @@ export default class HomePageView extends Component {
                                 <h2>Collaborations</h2>
                                 <p>Contribute your ideas to open, online challenges and develop best-in-class
                                     solutions.</p>
-                                <Button link={"#!"} label={"COLLABORATE"} aligment={"left-align-div"}/>
+                                <Button link={GlobalData.noLink} label={"COLLABORATE"} aligment={"left-align-div"}/>
                             </div>
                             <div>
                                 <h6>MOST RECENT COLLABORATION
                                 </h6>
-                                <a href={"#!"}>
+                                <a href={GlobalData.noLink}>
                                     <h2>
                                         How might we strengthen communication and trust between families and teachers to
                                         better support students’ success?
@@ -135,7 +133,7 @@ export default class HomePageView extends Component {
                             </div>
                         </div>
                         <div className={styles.list2}>
-                            <a href={"#!"}>
+                            <a href={GlobalData.noLink}>
                                 <div className={styles.Limg}></div>
                                 <div className={styles.Ltext}>
                                     <h2>Chapters</h2>
@@ -144,7 +142,7 @@ export default class HomePageView extends Component {
                                 </div>
                             </a>
 
-                            <a href={"#!"}>
+                            <a href={GlobalData.noLink}>
                                 <div className={styles.Limg}></div>
                                 <div className={styles.Ltext}>
                                     <h2>Toolkit</h2>
@@ -168,7 +166,7 @@ export default class HomePageView extends Component {
                                 okay, and we're in the position to do something about it."</h1>
                             <h4>- ANA OZA, 7TH GRADE ENGLISH TEACHER
                             </h4>
-                            <Button link={"#!"} label={"JOIN US"} aligment={"center-div"}/>
+                            <Button link={GlobalData.noLink} label={"JOIN US"} aligment={"center-div"}/>
                         </div>
                     </Container>
                 </div>
