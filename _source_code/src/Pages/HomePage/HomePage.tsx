@@ -1,27 +1,26 @@
 import React, {Component} from 'react';
 import GlobalData from "../../Services/GlobalData";
 import appStyles from '../../App.module.scss';
-import Button from '../../Components/Button/Button';
 import styles from './HomePage.module.scss';
 
+import Button from '../../Components/Button/Button';
+import Strip from '../../Components/Strip/Strip'
 import {Col, Container, Row} from "reactstrap";
 import Helmet from "react-helmet";
 
 import LogoPrimary from '../../images/TheTeachersGuild_Logo_Primary.png'
+import StripIMG from '../../images/o.png'
 import iCatrina from '../../images/Screen Shot 2018-12-07 at 1.28.54 PM.png'
 
 export default class HomePageView extends Component {
 
-    constructor(props: any) {
+    constructor(props : any) {
         super(props);
     }
 
-    componentDidMount() {
+    componentDidMount() {}
 
-    }
-
-    componentWillUnmount() {
-    }
+    componentWillUnmount() {}
 
     render() {
         return (
@@ -46,37 +45,37 @@ export default class HomePageView extends Component {
                             </Col>
                         </Row>
                     </Container>
-                    <div className={styles.main}>
-                        <div className={styles.cap}>Teachers getting to know each other at the Making It Real
-                            prototyping workshop.
+                    <Strip
+                        bgImg={StripIMG}
+                        height={680}
+                        caption={`Teachers getting to know each other at the Making It Real prototyping workshop.`}>
+                        <div className={styles.wellcome}>
+                            <h1>Welcome to The Teachers Guild</h1>
+                            <p>
+                                We are a professional community that activates teachers' creativity to solve the
+                                biggest challenges in education today. In our collaborative learning programs we
+                                use Design Thinking, a learner-centered approach to problem solving. Teachers
+                                tap into their inner designer by trying new ideas and discovering what works and
+                                why for their students and schools.
+                            </p>
+                            <Button
+                                link={GlobalData.noLink}
+                                label={"LEARN DESIGN THINKING"}
+                                aligment={"left-align-div"}/>
                         </div>
-                    </div>
-                    <Container fluid={true} className={styles.wellcome}>
-                        <Col className={appStyles["center-div"]}>
-                            <h1>Welcome to The Teachers Guild
-                            </h1>
-                            <p>We are a professional community that activates teachers' creativity to solve
-                                the biggest challenges in education today. In our collaborative learning
-                                programs we use Design Thinking, a learner-centered approach to problem solving.
-                                Teachers tap into their inner designer by trying new ideas and discovering what
-                                works and why for their students and schools.</p>
-                            <div>
-                                <Button link={GlobalData.noLink} label={"LEARN DESIGN THINKING"} aligment={"left-align-div"}/>
-                            </div>
-                        </Col>
-                    </Container>
-                    <Container fluid={true} className={styles.content + " center-div"}>
+                    </Strip>
 
+                    <Container fluid={true} className={styles.content + " center-div"}>
                         <h2>FEATURED CONTENT</h2>
                         <div className={styles.list}>
                             <div>
                                 <h5>RECENT ARTICLE</h5>
                                 <h4>
-                                    <a href='#!'>Teachers are Civic Leaders</a>
+                                    <a href={GlobalData.noLink}>Teachers are Civic Leaders</a>
                                 </h4>
                                 Teaching can be a force to unlock students’ inherent creativity and civic
                                 leadership.<br/>
-                                <a href='#!'>Here’s how.</a>
+                                <a href={GlobalData.noLink}>Here’s how.</a>
                             </div>
                             <div>
                                 <h5>ONGOING EVENT
@@ -119,7 +118,10 @@ export default class HomePageView extends Component {
                                 <h2>Collaborations</h2>
                                 <p>Contribute your ideas to open, online challenges and develop best-in-class
                                     solutions.</p>
-                                <Button link={GlobalData.noLink} label={"COLLABORATE"} aligment={"left-align-div"}/>
+                                <Button
+                                    link={GlobalData.noLink}
+                                    label={"COLLABORATE"}
+                                    aligment={"left-align-div"}/>
                             </div>
                             <div>
                                 <h6>MOST RECENT COLLABORATION
@@ -137,8 +139,7 @@ export default class HomePageView extends Component {
                                 <div className={styles.Limg}></div>
                                 <div className={styles.Ltext}>
                                     <h2>Chapters</h2>
-                                    <p>Activate and sustain a culture of creativity throughout your district or
-                                        region.</p>
+                                    <p>Activate and sustain a culture of creativity throughout your district or region.</p>
                                 </div>
                             </a>
 
@@ -149,7 +150,6 @@ export default class HomePageView extends Component {
                                     <p>Discover Design Thinking methods and mindsets to create learner-centered
                                         solutions.</p>
                                 </div>
-
                             </a>
                         </div>
                     </Container>
@@ -158,7 +158,7 @@ export default class HomePageView extends Component {
                             <h1>We are a community of 10,000 teachers nationwide, and over 100,000 toolkit
                                 users across the globe.</h1>
                         </div>
-                        <div></div>
+
                     </Container>
                     <Container fluid={true} className={styles.quart2 + " center-div"}>
                         <div>

@@ -1,7 +1,5 @@
 import React, {Component} from 'react';
 
-import styles from './Menu.module.scss';
-
 import MenuMobileView from './MenuMobile';
 import MenuDesktopView from './MenuDesktop';
 
@@ -11,13 +9,13 @@ interface IState {
     isMobile : boolean;
 }
 
-export default class MenuView extends Component < {},IState > {
+export default class MenuView extends Component < {},
+IState > {
 
     constructor(props : any) {
         super(props);
         this.state = {
-            isMobile: false,
-          //  menuIcon : "fas fa-angle-down"
+            isMobile: false
         }
 
     }
@@ -26,20 +24,21 @@ export default class MenuView extends Component < {},IState > {
         this.UpdateMenuType();
         window.addEventListener('resize', this.UpdateMenuType.bind(this))
     }
-     // componentDidUpdate() { //     this.UpdateMenuType(); // }
     componentWillUnmount() {
         window.removeEventListener('resize', this.UpdateMenuType.bind(this))
     }
 
     UpdateMenuType = () => {
-            this.setState({isMobile: GlobalData.isMobile()})
+        this.setState({
+            isMobile: GlobalData.isMobile()
+        })
     };
 
     render() {
         return (
             <div>{this.state.isMobile
-                ? <MenuMobileView/>
-                : <MenuDesktopView/>}
+                    ? <MenuMobileView/>
+                    : <MenuDesktopView/>}
             </div>
 
         )

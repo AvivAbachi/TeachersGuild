@@ -1,7 +1,6 @@
 @import '../../Var.scss';
 
 .menuStyle {
-
     nav {
         z-index: 5;
         position: fixed;
@@ -25,17 +24,22 @@
                 margin-left: 29px;
             }
         }
-
-        .login a {
-            font-weight: 900;
-            cursor: pointer;
-            font-size: 15px;
-            color: $cDark;
-
-            text-decoration: none !important;
-            a:active,
+        .login {
+            a {
+                font-weight: 900;
+                font-size: 15px;
+                color: $cDark;
+                text-align: end;
+                text-decoration: none !important;
+            }
             a:hover {
-                color: white !important;
+                color: white;
+                small {
+                    color: $cDark;
+                }
+            }
+            small {
+                margin-right: 6px;
             }
         }
     }

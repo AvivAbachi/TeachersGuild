@@ -1,5 +1,49 @@
 .homePage {
-  margin: 0px;
+
+    margin: 62px 0 0;
 }
+.wellcome {
+    min-height: 440px;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    background: white;
+    max-width: 940px;
+    padding: 20px 60px;
+    margin: 0 auto;
+    position: relative;
+    right: 8px;
+    h1 {
+        font-weight: 900;
+        font-size: 60px;
+        margin: 40px 0 20px;
+    }
+    p {
+        font-size: 19px;
+        margin: 0 0 52px;
+    }
+}
+.impact {
 
+    min-height: 440px;
+    display: block;
+    max-width: 500px;
+    background-color: white;
+    position: relative;
+    left: 8px;
+    h1 {
+        text-align: center;
+        padding: 15.5px 0;
+        background-color: #ffc40c;
 
+        color: #273c48;
+        font-size: 14px;
+        line-height: 19px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    .impactIMG{
+      min-height: 200px;
+      background-image: url('../../images/TheTeachersGuild_Impact_Report_2017_Page_01.png');
+    }
+}

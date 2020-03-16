@@ -1,0 +1,47 @@
+@import '../../Var.scss';
+footer {
+    background: $clight;
+    padding: 40px;
+
+    .row {
+        max-width: 960px;
+        margin: 0 auto !important;
+        justify-content: start;
+        .about {
+            margin-top: 53px;
+        }
+        .links {
+            font-weight: 900 !important;
+            margin-top: 53px;
+            display: flex;
+            flex-direction: column;
+            h5 {
+                font-weight: 700;
+            }
+            a {
+                color: $cDark;
+                text-decoration: underline !important;
+            }
+            a:hover {
+                color: $cYellow;
+            }
+        }
+        h6 {
+            margin-top: 30px;
+
+        }
+        .support {
+            display: flex;
+            :first-child {
+                margin-right: 12px;
+            }
+        }
+    }
+}
+// @media (max-width: 900px) {
+//     footer {
+//         padding: 40px 20px;
+
+
+//     }
+// }

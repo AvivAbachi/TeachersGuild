@@ -5,15 +5,12 @@
   //@extend .font_UppercaseEnglish;
   background: white;
   color: $cDark;
-  min-height: 70vh;
-  width: 100%;
-  overflow-x: hidden;
-  overflow-y: hidden;
+  overflow: hidden;
   font-family: 'Darker Grotesque', Arial, sans-serif,;
 }
 
 .App-rtl {
-  @extend .font_hebrew;
+  // @extend .font_hebrew;
   direction: rtl !important;
   text-align: right;
 }
@@ -26,67 +23,67 @@
 
 @import url('https://fonts.googleapis.com/css?family=Darker+Grotesque:300,400,500,600,700,800,900&display=swap');
 
-@font-face {
-  font-family: 'Georgia-Pro-Light-Italic';
-  src: url('./fonts/GeorgiaProW01-LightItalic.woff') format('woff'),
-  url('./fonts/GeorgiaProW01-LightItalic.ttf') format('truetype');
-}
+// @font-face {
+//   font-family: 'Georgia-Pro-Light-Italic';
+//   src: url('./fonts/GeorgiaProW01-LightItalic.woff') format('woff'),
+//   url('./fonts/GeorgiaProW01-LightItalic.ttf') format('truetype');
+// }
 
-@font-face {
-  font-family: 'Georgia-Pro-Regular';
-  src: url('./fonts/GeorgiaProW01-Regular.woff') format('woff'),
-  url('./fonts/GeorgiaProW01-Regular.ttf') format('truetype');
-}
+// @font-face {
+//   font-family: 'Georgia-Pro-Regular';
+//   src: url('./fonts/GeorgiaProW01-Regular.woff') format('woff'),
+//   url('./fonts/GeorgiaProW01-Regular.ttf') format('truetype');
+// }
 
-@font-face {
-  font-family: 'Helvetica-Neue-Pro';
-  src: url('./fonts/HelveticaNeueLTPro-Lt.woff') format('woff'),
-  url('./fonts/HelveticaNeueLTPro-Lt.ttf') format("truetype");
-}
+// @font-face {
+//   font-family: 'Helvetica-Neue-Pro';
+//   src: url('./fonts/HelveticaNeueLTPro-Lt.woff') format('woff'),
+//   url('./fonts/HelveticaNeueLTPro-Lt.ttf') format("truetype");
+// }
 
-@font-face {
-  font-family: 'Helvetica-Neue-Pro-Ultra-Light';
-  src: url('./fonts/HelveticaNeueLTPro-UltLt.woff') format('woff'),
-  url('./fonts/HelveticaNeueLTPro-UltLt.ttf') format("truetype");
-}
+// @font-face {
+//   font-family: 'Helvetica-Neue-Pro-Ultra-Light';
+//   src: url('./fonts/HelveticaNeueLTPro-UltLt.woff') format('woff'),
+//   url('./fonts/HelveticaNeueLTPro-UltLt.ttf') format("truetype");
+// }
 
-.font_UppercaseEnglish {
-  font-family: 'Helvetica-Neue-Pro', 'Segoe UI' !important;
-}
+// .font_UppercaseEnglish {
+//   font-family: 'Helvetica-Neue-Pro', 'Segoe UI' !important;
+// }
 
-.font_lowercaseEnglish {
-  font-family: 'Georgia-Pro-Light-Italic' !important;
-}
+// .font_lowercaseEnglish {
+//   font-family: 'Georgia-Pro-Light-Italic' !important;
+// }
 
-.font_titlesEnglish {
-  font-family: 'Georgia-Pro-Light-Italic' !important;
-}
+// .font_titlesEnglish {
+//   font-family: 'Georgia-Pro-Light-Italic' !important;
+// }
 
-.font_dataEnglish {
-  font-family: 'Helvetica-Neue-Pro' !important;
-}
+// .font_dataEnglish {
+//   font-family: 'Helvetica-Neue-Pro' !important;
+// }
 
-.font_hebrew {
-  font-family: 'Segoe UI' !important;
-}
+// .font_hebrew {
+//   font-family: 'Segoe UI' !important;
+// }
 
-.font_numbers {
-  font-family: 'Segoe UI' !important;
-}
+// .font_numbers {
+//   font-family: 'Segoe UI' !important;
+// }
 
-.font_symbols {
-  font-family: 'Lucida Sans Unicode' !important;
-}
+// .font_symbols {
+//   font-family: 'Lucida Sans Unicode' !important;
+// }
 
-.font_foreignLanguage {
-  font-family: 'Lucida Sans Unicode' !important;
-}
+// .font_foreignLanguage {
+//   font-family: 'Lucida Sans Unicode' !important;
+// }
 
-.font_codeTextFile {
-  font-family: "Noto Mono", 'Roboto Mono', "Droid Sans Mono", source-code-pro,
-  SFMono-Regular, 'Fira Mono', Menlo, Monaco, 'Inconsolata', 'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New',
-  monospace !important;
-}
+// .font_codeTextFile {
+//   font-family: "Noto Mono", 'Roboto Mono', "Droid Sans Mono", source-code-pro,
+//   SFMono-Regular, 'Fira Mono', Menlo, Monaco, 'Inconsolata', 'DejaVu Sans Mono', Consolas, 'Liberation Mono', 'Courier New',
+//   monospace !important;
+// }
 
 .hide-alt-text {
   text-indent: 100%;
