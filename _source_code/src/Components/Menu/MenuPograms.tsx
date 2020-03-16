@@ -5,6 +5,13 @@ import {ICallCloseProps} from '../../Models/interfaces'
 
 export default class Pograms extends Component <ICallCloseProps,{}>{
     render() {
+
+        const disabledLink={
+            pointerEvents: "none",
+          //  cursor:"default"
+        } as any;
+        
+        
         return (
             <div className={styles.program}>
                 <div className={styles.submenu}>

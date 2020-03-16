@@ -1,39 +1,42 @@
 @import '../../Var.scss';
 
-nav {
-    z-index: 5;
-    position: fixed;
-    top: 0;
-    height: 62px;
-    padding: 0 25px;
-    width: 100%;
-    margin: 0;
-    overflow: hidden;
-    background-color: $cYellow;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.menuStyle {
 
-    div {
-        align-items: center;
+    nav {
+        z-index: 5;
+        position: fixed;
+        top: 0;
+        height: 62px;
+        padding: 0 25px;
+        width: 100%;
+        margin: 0;
+        overflow: hidden;
+        background-color: $cYellow;
         display: flex;
-        justify-self: end;
+        justify-content: space-between;
+        align-items: center;
 
         div {
-            margin-left: 29px;
+            align-items: center;
+            display: flex;
+            justify-self: end;
+
+            div {
+                margin-left: 29px;
+            }
         }
-    }
 
-    .login a {
-        font-weight: 900;
-        cursor: pointer;
-        font-size: 15px;
-        color: $cDark;
+        .login a {
+            font-weight: 900;
+            cursor: pointer;
+            font-size: 15px;
+            color: $cDark;
 
-        text-decoration: none !important;
-        a:active,
-        a:hover {
-            color: white !important;
+            text-decoration: none !important;
+            a:active,
+            a:hover {
+                color: white !important;
+            }
         }
     }
 }
