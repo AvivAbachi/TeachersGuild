@@ -1,5 +1,5 @@
+@import '../../Var.scss';
 .homePage {
-
     margin: 62px 0 0;
 }
 .wellcome {
@@ -24,26 +24,102 @@
     }
 }
 .impact {
-
     min-height: 440px;
     display: block;
     max-width: 500px;
-    background-color: white;
+    background-color: $clight;
     position: relative;
     left: 8px;
     h1 {
         text-align: center;
         padding: 15.5px 0;
         background-color: #ffc40c;
-
+        margin: 0 !important;
         color: #273c48;
         font-size: 14px;
         line-height: 19px;
         font-weight: 700;
         text-transform: uppercase;
     }
-    .impactIMG{
-      min-height: 200px;
-      background-image: url('../../images/TheTeachersGuild_Impact_Report_2017_Page_01.png');
+    .impactIMG {
+        background-position: 0 0px, 0 0;
+        background-size: cover, 125px;
+        min-height: 200px;
+        padding: 54px 0;
+        background-image: url('../../images/TheTeachersGuild_Impact_Report_2017_Page_01.png');
+        h2 {
+            position: relative;
+            left: 47%;
+            font-size: 2rem;
+        }
+        p {
+            position: relative;
+            left: 47%;
+            margin-bottom: 8px;
+            font-weight: 700;
+        }
+    }
+    form {
+        padding: 35px;
+        background-color: $clight;
+        width: 100%;
+        :nth-child(1n+1) {
+            width: 100%;
+            margin: 10px 0;
+        }
+        .InputEmail {
+            background: none !important;
+            border: none;
+            border-bottom: 2px solid $cDark;
+
+        }
+
+        .error {
+            border: 2px solid red;
+        }
+        h5 {
+            font-weight: 800;
+
+            span {
+                color: red;
+            }
+        }
+        .Send {
+            color: green;
+            text-align: center;
+        }
+        .btn {
+            font-size: 1.75rem;
+            input:hover {
+                background-color: $cDark;
+                text-decoration: none;
+                color: white;
+            }
+        }
+        input:disabled {
+            background-color: gray !important;
+            color: darkgray;
+            opacity: 0.4;
+            border: none !important;
+        }
+    }
+
+}
+.team {
+    text-align: center;
+    background-color: $clight;
+    > div {
+        max-width: 940px;
+        padding: 100px 0;
+        h1 {
+            font-size: 50px;
+            font-weight: 900;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+        p {
+            margin: 50px 177px 44px;
+            font-size: 18px;
+        }
     }
 }

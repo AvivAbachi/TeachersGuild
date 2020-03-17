@@ -1,25 +1,28 @@
 {
   "files": {
-    "main.css": "/TeachersGuild/static/css/main.64f8e2c8.chunk.css",
-    "main.js": "/TeachersGuild/static/js/main.ee1e8662.chunk.js",
-    "main.js.map": "/TeachersGuild/static/js/main.ee1e8662.chunk.js.map",
+    "main.css": "/TeachersGuild/static/css/main.43b5a3e8.chunk.css",
+    "main.js": "/TeachersGuild/static/js/main.bdfaa0fd.chunk.js",
+    "main.js.map": "/TeachersGuild/static/js/main.bdfaa0fd.chunk.js.map",
     "runtime-main.js": "/TeachersGuild/static/js/runtime-main.17ead4d3.js",
     "runtime-main.js.map": "/TeachersGuild/static/js/runtime-main.17ead4d3.js.map",
-    "static/js/2.2267781c.chunk.js": "/TeachersGuild/static/js/2.2267781c.chunk.js",
-    "static/js/2.2267781c.chunk.js.map": "/TeachersGuild/static/js/2.2267781c.chunk.js.map",
+    "static/js/2.bf341b4e.chunk.js": "/TeachersGuild/static/js/2.bf341b4e.chunk.js",
+    "static/js/2.bf341b4e.chunk.js.map": "/TeachersGuild/static/js/2.bf341b4e.chunk.js.map",
     "index.html": "/TeachersGuild/index.html",
-    "precache-manifest.20b9cb60ca9a5cf173ae2eb9150d24c0.js": "/TeachersGuild/precache-manifest.20b9cb60ca9a5cf173ae2eb9150d24c0.js",
+    "precache-manifest.05767d8f502c018da5942d6082db19eb.js": "/TeachersGuild/precache-manifest.05767d8f502c018da5942d6082db19eb.js",
     "service-worker.js": "/TeachersGuild/service-worker.js",
-    "static/css/main.64f8e2c8.chunk.css.map": "/TeachersGuild/static/css/main.64f8e2c8.chunk.css.map",
-    "static/js/2.2267781c.chunk.js.LICENSE.txt": "/TeachersGuild/static/js/2.2267781c.chunk.js.LICENSE.txt",
-    "static/media/HomePage.module.scss": "/TeachersGuild/static/media/o.3bedf52a.png",
-    "static/media/App.module.scss": "/TeachersGuild/static/media/HelveticaNeueLTPro-UltLt.2ff9f3fb.woff",
-    "static/media/Screen Shot 2018-12-07 at 1.28.54 PM.png": "/TeachersGuild/static/media/Screen Shot 2018-12-07 at 1.28.54 PM.49c9e788.png"
+    "static/css/main.43b5a3e8.chunk.css.map": "/TeachersGuild/static/css/main.43b5a3e8.chunk.css.map",
+    "static/js/2.bf341b4e.chunk.js.LICENSE.txt": "/TeachersGuild/static/js/2.bf341b4e.chunk.js.LICENSE.txt",
+    "static/media/HomePage.module.scss": "/TeachersGuild/static/media/HomeA.bc7ff8a0.jpg",
+    "static/media/Screen Shot 2018-12-07 at 1.28.54 PM.png": "/TeachersGuild/static/media/Screen Shot 2018-12-07 at 1.28.54 PM.49c9e788.png",
+    "static/media/About.module.scss": "/TeachersGuild/static/media/TheTeachersGuild_Impact_Report_2017_Page_01.089a3723.png",
+    "static/media/chapter-kickoff.png": "/TeachersGuild/static/media/chapter-kickoff.7ea61e30.png",
+    "static/media/o.png": "/TeachersGuild/static/media/o.3bedf52a.png",
+    "static/media/tgfooterlogo.png": "/TeachersGuild/static/media/tgfooterlogo.e24f1188.png"
   },
   "entrypoints": [
     "static/js/runtime-main.17ead4d3.js",
-    "static/js/2.2267781c.chunk.js",
-    "static/css/main.64f8e2c8.chunk.css",
-    "static/js/main.ee1e8662.chunk.js"
+    "static/js/2.bf341b4e.chunk.js",
+    "static/css/main.43b5a3e8.chunk.css",
+    "static/js/main.bdfaa0fd.chunk.js"
   ]
 }

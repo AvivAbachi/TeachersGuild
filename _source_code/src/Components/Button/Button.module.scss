@@ -1,7 +1,7 @@
 @import '../../Var.scss';
 .btn {
-  background: none;
-  text-align: center;
+    background: none;
+    text-align: center;
     display: block;
     width: 240px;
     border: $cDark 2px solid;
@@ -10,12 +10,12 @@
     text-decoration: none;
     cursor: pointer;
     border-radius: 0;
-    color:$cDark  ;
+    color: $cDark;
     font-weight: 900;
-    transition:all ease .3s;
-}
-.btn:hover{
-  background-color: $cDark;
-  text-decoration: none;
-  color: white;
+    transition: all ease 0.3s;
+    :hover {
+        background-color: $cDark;
+        text-decoration: none;
+        color: white;
+    }
 }
