@@ -1,8 +1,4 @@
 import React, {Component} from 'react';
-import ReactDOM from 'react-dom';
-import appStyles from './App.module.scss';
-import {Container, Col, Row} from "reactstrap";
-import Helmet from "react-helmet";
 
 import {Redirect, Route, Switch} from "react-router-dom";
 
@@ -12,12 +8,16 @@ import NotFound from './Pages/NotFound/NotFound'
 
 import MenuComponent from "./Components/Menu/Menu";
 import FooterComponent from "./Components/Footer/footer";
+import ScrollToTop from "./Components/ScrollToTop/ScrollToTop";
 
-export default class AppRoutes extends Component  {
+export default class AppRoutes extends Component {
+
     render() {
+
         return (
             <div>
-                <MenuComponent />
+                <ScrollToTop/>
+                <MenuComponent/>
                 <Switch>
                     <Route path={"/"} exact component={HomePageView}/>
                     <Route path={"/About"} component={AboutView}/>
