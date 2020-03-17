@@ -10,8 +10,7 @@
     "url": "https://github.com/AvivAbachi/TeachersGuild"
   },
   "keywords": ["web components"],
-  "homepage": "https://avivabachi.github.io/TeachersGuild",
-  "oldhomepage": "https://avivabachi.github.io/TeachersGuild",
+  "homepage": "https://avivabachi.github.io/TeachersGuild/",
   "dependencies": {
     "@babel/core": "7.8.4",
     "@svgr/webpack": "4.3.3",
