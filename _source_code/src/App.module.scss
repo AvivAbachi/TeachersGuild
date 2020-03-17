@@ -103,9 +103,8 @@ span-link:hover, span-link:active {
 }
 
 .page {
-  padding: 67px 0 0;
+  padding: 62px 0 0;
   color: $cDark;
-
 }
 
 .page .page-content::-webkit-scrollbar-track {
@@ -163,27 +162,35 @@ span-link:hover, span-link:active {
   position: absolute;
   top: 50%;
 }
-
-@media (min-width: 576px) {
-  .container {
-    max-width: 540px;
+.e404{
+  text-align: center;
+   min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  div{
+    margin:auto 0;
   }
 }
+// @media (min-width: 576px) {
+//   .container {
+//     max-width: 540px;
+//   }
+// }
 
-@media (min-width: 768px) {
-  .container {
-    max-width: 720px;
-  }
-}
+// @media (min-width: 768px) {
+//   .container {
+//     max-width: 720px;
+//   }
+// }
 
-@media (min-width: 992px) {
-  .container {
-    max-width: 960px;
-  }
-}
+// @media (min-width: 992px) {
+//   .container {
+//     max-width: 960px;
+//   }
+// }
 
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1900px;
-  }
-}
+// @media (min-width: 1200px) {
+//   .container {
+//     max-width: 1900px;
+//   }
+// }

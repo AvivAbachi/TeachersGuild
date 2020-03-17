@@ -37,7 +37,7 @@ IState > {
 
         return (
             <div className={menuStyles.menuStyle}>
-                <nav >
+                <nav>
                     <NavLink to={"/"}><img
                         src={TGLogo}
                         alt="Logo"

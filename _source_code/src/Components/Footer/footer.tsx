@@ -11,20 +11,20 @@ import IDEO from "./IDEO_logo_2.png";
 export default class Footer extends Component {
     render() {
         return (
-            <footer >
-                <Row className={styles.row}>
-                    <Col xl="5" className={styles.about}>
+            <footer>
+                <Row className={styles.row} >
+                    <Col md="5" xs={"12"} className={styles.about}>
                         <img src={TGLogo} alt="" width="189"/>
                         <p>A non-profit initiative of PLUSSED at Riverdale Country School and IDEO's
                             Design for Learning Studio.</p>
                     </Col>
-                    <Col xl="4" className={styles.links}>
+                    <Col md="4" xs={"12"} className={styles.links}>
                         <h5>CONTACT US</h5>
                         <a href={GlobalData.noLink}>TERMS & CONDITIONS</a>
                         <a href={GlobalData.noLink}>PRIVACY POLICY</a>
                         <a href={GlobalData.noLink}>COOKIES POLICY</a>
                     </Col >
-                    <Col xl="12">
+                    <Col md="12" xs={"12"}>
                         <h6>SUPPORTED BY</h6>
                         <div className={styles.support}>
                             <a href={GlobalData.noLink}><img src={riverdale} alt="" width="101"/></a>

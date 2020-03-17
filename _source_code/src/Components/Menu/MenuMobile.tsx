@@ -30,8 +30,7 @@ IState > {
 
     render() {
         return (
-            <div className={menuStyles.menuStyle}>
-
+            <div className={menuStyles.menuStyle} >
                 <nav>
                     <Button className={styles.btn} onClick={e => this.toggleMenu()}>
                         <i
@@ -42,7 +41,6 @@ IState > {
                                 ? "white"
                                 : ""
                         }}/>
-
                     </Button>
                     <NavLink to={"/"}><img
                         src={TGLogo}

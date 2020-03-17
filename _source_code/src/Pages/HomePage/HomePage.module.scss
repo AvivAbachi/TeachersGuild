@@ -22,7 +22,7 @@
     background: white;
     max-width: 940px;
     padding: 20px 60px;
-    // margin: 0 auto;
+    margin: 0 auto;
     h1 {
         font-weight: 900;
         font-size: 60px;
@@ -74,6 +74,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    > h1 {
+        font-size: 50px;
+        margin: 0;
+    }
+    > h5 {
+        font-size: 18px;
+        margin: 0;
+    }
     .card {
         background: white;
         display: flex;
@@ -113,12 +121,9 @@
     max-width: 960px;
     margin: 0 10px;
     .Limg {
-        transition: background-size ease 2s !important;
         height: 248px;
-        display: block;
         border-bottom: $cYellow 8px solid;
         background-repeat: no-repeat;
-        background: white;
         background-size: cover;
         background-position: center center;
     }
@@ -127,18 +132,21 @@
         text-align: start;
         padding: 52px 31px;
     }
-    a:hover {
+    a {
         text-decoration: none;
+    }
+    a:hover {
         h2 {
             color: $cYellow;
         }
         .Limg {
-            background-size: 110%;
+            background-size: 115%;
         }
     }
     a:first-of-type {
         margin-right: 10px;
         .Limg {
+            transition: ease background-image 5s !important;
             background-image: url('../../images/59d69e59667c650001e7fffa_chapters.png');
         }
     }
@@ -183,7 +191,7 @@
         margin: 10px 0 20px;
         font-size: 24px;
     }
-    a{
+    a {
         background-color: $cYellow;
         border: none;
     }

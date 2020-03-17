@@ -36,7 +36,8 @@ IState > {
 
     render() {
         return (
-            <div>{this.state.isMobile
+            <div>
+                {this.state.isMobile
                     ? <MenuMobileView/>
                     : <MenuDesktopView/>}
             </div>

@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import styles from './Card.module.scss';
+import {Col} from 'reactstrap'
 
 interface IProps {
     cardIMG : string
@@ -30,18 +31,20 @@ IState > {
 
     render() {
         return (
-            <div className={styles.Card}>
-                <div
-                    className={styles.cardIMG}
-                    style={{
-                    backgroundImage: this.state.cardIMG
-                }}/>
-                <div className={styles.CardBody}>
-                    <h4>{this.state.job}</h4>
-                    <h2>{this.state.name}</h2>
-                    <p>{this.state.text}</p>
+            <Col  md={4} sm={6} xs={12}>
+                <div   className={styles.Card}>
+                    <div
+                        className={styles.cardIMG}
+                        style={{
+                        backgroundImage: `url( ${this.props.cardIMG} )`
+                    }}/>
+                    <div className={styles.CardBody}>
+                        <h5>{this.props.job}</h5>
+                        <h2>{this.props.name}</h2>
+                        <p>{this.props.text}</p>
+                    </div>
                 </div>
-            </div>
+            </Col>
         )
     }
 }

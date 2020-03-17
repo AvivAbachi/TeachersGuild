@@ -2,17 +2,23 @@
 .homePage {
     margin: 62px 0 0;
 }
+.stripRow {
+    margin: 0 auto;
+    justify-content: center !important;
+    margin-bottom: 60px;
+}
 .wellcome {
     min-height: 440px;
     display: flex;
     flex-direction: column;
     text-align: start;
-    background: white;
+
     max-width: 940px;
-    padding: 20px 60px;
-    margin: 0 auto;
-    position: relative;
-    right: 8px;
+    padding: 0 8px;
+    > div {
+        padding: 20px 60px;
+        background: white;
+    }
     h1 {
         font-weight: 900;
         font-size: 60px;
@@ -26,10 +32,11 @@
 .impact {
     min-height: 440px;
     display: block;
+    padding: 0 8px;
     max-width: 500px;
-    background-color: $clight;
-    position: relative;
-    left: 8px;
+    > div {
+        background-color: $clight;
+    }
     h1 {
         text-align: center;
         padding: 15.5px 0;
@@ -71,36 +78,28 @@
             background: none !important;
             border: none;
             border-bottom: 2px solid $cDark;
+            font-size: 18px;
 
         }
-
-        .error {
+        .err {
+            background: none !important;
+            border: none;
+            font-size: 18px;
             border: 2px solid red;
         }
-        h5 {
+
+        h3 {
             font-weight: 800;
 
             span {
+                margin-left: 42px;
                 color: red;
             }
         }
         .Send {
-            color: green;
+            font-size: 24px;
+            color: limegreen;
             text-align: center;
-        }
-        .btn {
-            font-size: 1.75rem;
-            input:hover {
-                background-color: $cDark;
-                text-decoration: none;
-                color: white;
-            }
-        }
-        input:disabled {
-            background-color: gray !important;
-            color: darkgray;
-            opacity: 0.4;
-            border: none !important;
         }
     }
 
@@ -108,18 +107,87 @@
 .team {
     text-align: center;
     background-color: $clight;
-    > div {
+    padding: 0 0 100px;
+    .teamContainer {
         max-width: 940px;
-        padding: 100px 0;
-        h1 {
-            font-size: 50px;
-            font-weight: 900;
-            margin-top: 40px;
-            margin-bottom: 20px;
-        }
-        p {
-            margin: 50px 177px 44px;
-            font-size: 18px;
+        margin: 0 auto;
+
+        .box {
+            padding: 100px 0;
+            h1 {
+                font-size: 50px;
+                font-weight: 900;
+                margin-top: 40px;
+                margin-bottom: 20px;
+            }
+            p {
+                margin: 50px 177px 44px;
+                font-size: 18px;
+            }
+            .worker {
+                justify-content: space-between;
+
+            }
         }
     }
 }
+.support {
+
+    padding-top: 160px;
+    padding-bottom: 160px;
+    text-align: center;
+    > div > div {
+        justify-content: center;
+        align-items: center;
+    }
+    h1 {
+        font-size: 50px;
+        display: block;
+        max-width: 752px;
+        margin: 0 auto 75px;
+        padding: 0;
+
+    }
+    a {
+        margin-bottom: 39px;
+        img {
+            vertical-align: middle;
+            margin: 39px 0;
+
+        }
+    }
+}
+@media (max-width: 576px) {
+    .wellcome {
+        padding: 0 48px;
+        > div {
+            padding: 20px 40px;
+        }
+        h1 {
+            font-size: 50px;
+            margin: 0;
+        }
+    }
+    .impact {
+        padding: 0 48px;
+
+    }
+
+}
+@media (max-width: 768px) {
+    .team > .teamContainer > .box > p {
+        margin: 50px 32px 44px !important;
+    }
+}
+@media (max-width: 992px) {
+    .wellcome {
+        margin: 0 auto;
+    }
+    .impact {
+        margin: 0 auto;
+    }
+    .team > .teamContainer > .box > p {
+        margin: 50px 128px 44px;
+    }
+}
+@media (max-width: 1200px) {}

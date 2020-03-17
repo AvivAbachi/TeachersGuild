@@ -3,15 +3,15 @@ class globalData {
     public readonly noLink : string = "javascript:void(0)";
     public readonly baseRoute : string = (navigator.userAgent === "ReactSnap")
         ? ""
-        : ""; // /app /TeachersGuild  https://avivabachi.github.io/TeachersGuild
+        : "/TeachersGuild"; // /app /TeachersGuild  https://avivabachi.github.io/TeachersGuild
 
     public isMobile() : boolean {
         return(window.innerWidth <= 980 || window.screen.width <= 980);
     }
-
-    public worker : any = [
+    //        Adha Mengis
+    public worker : Array < object > = [
         {
-            cardIMG: 'https://uploads-ssl.webflow.com/59d5399de966f4000142dd37/5a6b74b641e4ab00014b430d_English_Alysha-23002.jpg',
+            cardIMG: 'https://uploads-ssl.webflow.com/59d5399de966f4000142dd37/5a6b74b641e4ab00014b430d_English_Alysha-23002.jpg' ,
             job: 'COMMUNITY MANAGER, EDUCATOR',
             name: 'Alysha English',
             text: 'This is some text inside of a div block.'
@@ -21,9 +21,9 @@ class globalData {
             name: 'Larry Corio',
             text: 'This is some text inside of a div block.'
         }, {
-            cardIMG: 'https://uploads-ssl.webflow.com/59d5399de966f4000142dd37/5b58bd917d582b7964d8f646_IMG_2031%20(1).JPG',
+            cardIMG: 'https://tinyfac.es/data/avatars/7D3FA6C0-83C8-4834-B432-6C65ED4FD4C3-500w.jpeg',
             job: 'CONTENT STRATEGIST, EDUCATOR',
-            name: 'Adha Mengis',
+            name: 'Steve T. Scaife',
             text: 'This is some text inside of a div block.'
         }, {
             cardIMG: 'https://uploads-ssl.webflow.com/59d5399de966f4000142dd37/5c927f24b30f710aa47fb4d7_Diaz_Lusmaia-9236.jpg',
@@ -42,8 +42,6 @@ class globalData {
             text: 'This is some text inside of a div block.'
         }
     ]
-
 }
-
 const GlobalData = new globalData();
 export default GlobalData;
