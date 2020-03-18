@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/TeachersGuild/static/css/main.fb747d17.chunk.css",
-    "main.js": "/TeachersGuild/static/js/main.a7152181.chunk.js",
-    "main.js.map": "/TeachersGuild/static/js/main.a7152181.chunk.js.map",
+    "main.css": "/TeachersGuild/static/css/main.9219c23d.chunk.css",
+    "main.js": "/TeachersGuild/static/js/main.8051edcd.chunk.js",
+    "main.js.map": "/TeachersGuild/static/js/main.8051edcd.chunk.js.map",
     "runtime-main.js": "/TeachersGuild/static/js/runtime-main.17ead4d3.js",
     "runtime-main.js.map": "/TeachersGuild/static/js/runtime-main.17ead4d3.js.map",
-    "static/js/2.77a23d92.chunk.js": "/TeachersGuild/static/js/2.77a23d92.chunk.js",
-    "static/js/2.77a23d92.chunk.js.map": "/TeachersGuild/static/js/2.77a23d92.chunk.js.map",
+    "static/js/2.12e536f2.chunk.js": "/TeachersGuild/static/js/2.12e536f2.chunk.js",
+    "static/js/2.12e536f2.chunk.js.map": "/TeachersGuild/static/js/2.12e536f2.chunk.js.map",
     "index.html": "/TeachersGuild/index.html",
-    "precache-manifest.fc3c8a0c0cd54ba7c88e19f74ac1ef91.js": "/TeachersGuild/precache-manifest.fc3c8a0c0cd54ba7c88e19f74ac1ef91.js",
+    "precache-manifest.21298198af13c4e65075e5ec3b65c884.js": "/TeachersGuild/precache-manifest.21298198af13c4e65075e5ec3b65c884.js",
     "service-worker.js": "/TeachersGuild/service-worker.js",
-    "static/css/main.fb747d17.chunk.css.map": "/TeachersGuild/static/css/main.fb747d17.chunk.css.map",
-    "static/js/2.77a23d92.chunk.js.LICENSE.txt": "/TeachersGuild/static/js/2.77a23d92.chunk.js.LICENSE.txt",
+    "static/css/main.9219c23d.chunk.css.map": "/TeachersGuild/static/css/main.9219c23d.chunk.css.map",
+    "static/js/2.12e536f2.chunk.js.LICENSE.txt": "/TeachersGuild/static/js/2.12e536f2.chunk.js.LICENSE.txt",
     "static/media/HomePage.module.scss": "/TeachersGuild/static/media/HomeA.bc7ff8a0.jpg",
     "static/media/Screen Shot 2018-12-07 at 1.28.54 PM.png": "/TeachersGuild/static/media/Screen Shot 2018-12-07 at 1.28.54 PM.49c9e788.png",
     "static/media/About.module.scss": "/TeachersGuild/static/media/TheTeachersGuild_Impact_Report_2017_Page_01.089a3723.png",
@@ -24,8 +24,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.17ead4d3.js",
-    "static/js/2.77a23d92.chunk.js",
-    "static/css/main.fb747d17.chunk.css",
-    "static/js/main.a7152181.chunk.js"
+    "static/js/2.12e536f2.chunk.js",
+    "static/css/main.9219c23d.chunk.css",
+    "static/js/main.8051edcd.chunk.js"
   ]
 }
