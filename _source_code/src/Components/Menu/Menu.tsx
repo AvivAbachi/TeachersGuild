@@ -37,9 +37,10 @@ IState > {
     render() {
         return (
             <div>
-                {this.state.isMobile
-                    ? <MenuMobileView/>
-                    : <MenuDesktopView/>}
+                {/* {!this.state.isMobile */}
+                    {/* ?  */}
+                    <MenuDesktopView/>
+                     {/* : <MenuMobileView/>} */}
             </div>
 
         )

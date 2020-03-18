@@ -12,7 +12,7 @@
   "keywords": [
     "web components"
   ],
-  "homepage": "https://avivabachi.github.io/TeachersGuild/",
+  "homepage": "avivabachi.github.io/TeachersGuild/",
   "dependencies": {
     "@babel/core": "7.8.4",
     "@svgr/webpack": "4.3.3",
@@ -52,7 +52,6 @@
     "eventemitter3": "^4.0.0",
     "file-loader": "4.3.0",
     "fs-extra": "^8.1.0",
-    "gh-pages": "^2.2.0",
     "html-webpack-plugin": "4.0.0-beta.11",
     "identity-obj-proxy": "3.0.0",
     "jest": "^25.1.0",
@@ -103,7 +102,7 @@
     "postbuild": "react-snap",
     "test": "node scripts/test.js",
     "predeploy": "npm run build",
-    "deploy": "TeachersGuild -d build"
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -174,5 +173,8 @@
     "presets": [
       "react-app"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^2.2.0"
   }
 }
