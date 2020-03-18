@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "cf59ac161ebaa17ee167d0a376b869fa",
+    "revision": "1a07dedbdcc7db22aed40cadaea15e5b",
     "url": "/TeachersGuild/index.html"
   },
   {
-    "revision": "0874a5f7fb2c4073b9cd",
-    "url": "/TeachersGuild/static/css/main.00f17602.chunk.css"
+    "revision": "e1c5778e8c2c6853ae39",
+    "url": "/TeachersGuild/static/css/main.c7853cbe.chunk.css"
   },
   {
-    "revision": "a910ae8f203eb70f8d60",
-    "url": "/TeachersGuild/static/js/2.12e536f2.chunk.js"
+    "revision": "427b9599f6178965dbcf",
+    "url": "/TeachersGuild/static/js/2.0dff2a7b.chunk.js"
   },
   {
     "revision": "9a0e6ad7df4effc3aa6ea7f039958117",
-    "url": "/TeachersGuild/static/js/2.12e536f2.chunk.js.LICENSE.txt"
+    "url": "/TeachersGuild/static/js/2.0dff2a7b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "0874a5f7fb2c4073b9cd",
-    "url": "/TeachersGuild/static/js/main.41d16d61.chunk.js"
+    "revision": "e1c5778e8c2c6853ae39",
+    "url": "/TeachersGuild/static/js/main.fccfe8d1.chunk.js"
   },
   {
     "revision": "817e8f55b5affb3a3770",
@@ -58,6 +58,22 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "7ea61e30d233693ea50e0fd6ccb62f19",
     "url": "/TeachersGuild/static/media/chapter-kickoff.7ea61e30.png"
+  },
+  {
+    "revision": "0888d2fff78cafa149acf1a2c324efd3",
+    "url": "/TeachersGuild/static/media/neutra-text-bold-5871e1605afa2.0888d2ff.woff"
+  },
+  {
+    "revision": "648bc2e355694a0740d588ad0b58dcf9",
+    "url": "/TeachersGuild/static/media/neutra-text-bold-italic-5872615974382.648bc2e3.woff"
+  },
+  {
+    "revision": "359ddf8803056e18c5d8f83d031def9b",
+    "url": "/TeachersGuild/static/media/neutra-text-light-5872613aeda5b.359ddf88.woff"
+  },
+  {
+    "revision": "3940087712316266524b1dcd15545b03",
+    "url": "/TeachersGuild/static/media/neutra-text-tf-5871e0b0704ed.39400877.woff"
   },
   {
     "revision": "3bedf52a3a9728baa9164ad33f7e6c56",
