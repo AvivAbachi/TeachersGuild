@@ -3,14 +3,7 @@ button {
     background: none !important;
     border: none !important;
     box-shadow: none !important;
-    i {
-        color: #273c48;
-    }
-}
-button {
-    background: none !important;
-    border: none !important;
-    box-shadow: none !important;
+    outline: none;
     i {
         color: #273c48;
     }
@@ -40,6 +33,7 @@ button {
         font-weight: 900;
         color: white;
         padding: 20px 30px;
+        text-decoration: none !important;
 
     }
     a:nth-of-type(2),
@@ -48,7 +42,6 @@ button {
     }
     a:hover {
         color: $cYellow;
-        text-decoration: none;
     }
     .active {
         color: $cYellow;
