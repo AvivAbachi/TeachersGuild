@@ -130,7 +130,7 @@ export default class AboutView extends Component <{},
                                 <Button label={"CONTACT US"}/>
                             </div>
                             <Row noGutters={true} className={styles.worker}>
-                                {(workerJSON as Array<object>).map((item: any, index: number) => <Card
+                                {(workerJSON as Array<object>).map((item: any, index: number, async) => <Card
                                     cardIMG={item.cardIMG}
                                     job={item.job}
                                     name={item.name}

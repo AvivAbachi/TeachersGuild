@@ -56,9 +56,7 @@ export default class HomePageView extends Component <iProps, {}> {
                             why for their students and schools.
                         </p>
                         <Button label={"LEARN DESIGN THINKING"}
-                                aligment={(!this.props.isMobile
-                                    ? "left-align-div"
-                                    : "center-div")}/>
+                                aligment={("left-align-div")} />
                     </div>
                 </Strip>
                 <Container fluid={true} className={styles.content}>
