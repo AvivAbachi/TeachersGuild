@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e6b25925f080204e2ba83f87a576b3ac",
+    "revision": "018a9dfae30baa078b36a67ad0f0f2ec",
     "url": "/TeachersGuild/index.html"
   },
   {
-    "revision": "09c92b914179c8a0b869",
+    "revision": "08157b8900ed5bdfb843",
     "url": "/TeachersGuild/static/css/main.00f17602.chunk.css"
   },
   {
-    "revision": "a910ae8f203eb70f8d60",
-    "url": "/TeachersGuild/static/js/2.12e536f2.chunk.js"
+    "revision": "4cdd6585388261c7966e",
+    "url": "/TeachersGuild/static/js/2.81e80a1b.chunk.js"
   },
   {
     "revision": "9a0e6ad7df4effc3aa6ea7f039958117",
-    "url": "/TeachersGuild/static/js/2.12e536f2.chunk.js.LICENSE.txt"
+    "url": "/TeachersGuild/static/js/2.81e80a1b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "09c92b914179c8a0b869",
-    "url": "/TeachersGuild/static/js/main.ed53dd22.chunk.js"
+    "revision": "08157b8900ed5bdfb843",
+    "url": "/TeachersGuild/static/js/main.309ec8df.chunk.js"
   },
   {
     "revision": "817e8f55b5affb3a3770",
