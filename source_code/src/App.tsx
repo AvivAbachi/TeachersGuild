@@ -8,7 +8,7 @@ import AppRoutes from "./App.Routes";
 const App : React.FC = (props) => {
     return (
         <div className={styles.App}>
-            <BrowserRouter basename={"/TeachersGuild/"}>
+            <BrowserRouter>
                 <AppRoutes/>
             </BrowserRouter>
         </div>
