@@ -9,10 +9,8 @@ import AppRoutes from "./App.Routes";
 const App : React.FC = (props) => {
     return (
         <div className={styles.App}>
-            <BrowserRouter basename={"/"}>
-
+            <BrowserRouter >
                 <AppRoutes/>
-
             </BrowserRouter>
         </div>
     );
