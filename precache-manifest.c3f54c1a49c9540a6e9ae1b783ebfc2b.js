@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "17b798f34401d3bc1a461efb6ca88b86",
+    "revision": "3acc496cbf06ddc318b26530940a4d15",
     "url": "/avivabachi.github.io/TeachersGuild/index.html"
   },
   {
-    "revision": "2567ced2208358cfd267",
+    "revision": "58f785437e4c9f6d4b83",
     "url": "/avivabachi.github.io/TeachersGuild/static/css/main.4ffa8560.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/avivabachi.github.io/TeachersGuild/static/js/2.77a23d92.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "2567ced2208358cfd267",
-    "url": "/avivabachi.github.io/TeachersGuild/static/js/main.c6c4820d.chunk.js"
+    "revision": "58f785437e4c9f6d4b83",
+    "url": "/avivabachi.github.io/TeachersGuild/static/js/main.83ef91b6.chunk.js"
   },
   {
     "revision": "43ae4cf7620e53f2107c",
