@@ -9,8 +9,11 @@
     "type": "git",
     "url": "https://github.com/AvivAbachi/TeachersGuild"
   },
-  "keywords": ["web components"],
-  "homepage": "https://avivabachi.github.io/TeachersGuild/",
+  "keywords": [
+    "web components"
+  ],
+  "homepage": "http://teachersguild/",
+  "old": "https://avivabachi.github.io/TeachersGuild/",
   "dependencies": {
     "@babel/core": "7.8.4",
     "@svgr/webpack": "4.3.3",
@@ -100,7 +103,6 @@
     "build": "node scripts/build.js",
     "postbuild": "react-snap",
     "test": "node scripts/test.js",
-
     "predeploy": "npm run build",
     "deploy": "TeachersGuild -d build"
   },
@@ -109,19 +111,33 @@
   },
   "browserslist": {
     "production": [
-      ">0.2%", "not dead", "not op_mini all"
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
     ],
-    "development": ["last 1 chrome version", "last 1 firefox version", "last 1 safari version"]
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   },
   "jest": {
-    "roots": ["<rootDir>/src"],
-    "collectCoverageFrom": [
-      "src/**/*.{js,jsx,ts,tsx}", "!src/**/*.d.ts"
+    "roots": [
+      "<rootDir>/src"
     ],
-    "setupFiles": ["react-app-polyfill/jsdom"],
-    "setupFilesAfterEnv": ["<rootDir>/src/setupTests.ts"],
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx,ts,tsx}",
+      "!src/**/*.d.ts"
+    ],
+    "setupFiles": [
+      "react-app-polyfill/jsdom"
+    ],
+    "setupFilesAfterEnv": [
+      "<rootDir>/src/setupTests.ts"
+    ],
     "testMatch": [
-      "<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}", "<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"
+      "<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}",
+      "<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"
     ],
     "testEnvironment": "jest-environment-jsdom-fourteen",
     "transform": {
@@ -130,7 +146,8 @@
       "^(?!.*\\.(js|jsx|ts|tsx|css|json)$)": "<rootDir>/config/jest/fileTransform.js"
     },
     "transformIgnorePatterns": [
-      "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$", "^.+\\.module\\.(css|sass|scss)$"
+      "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$",
+      "^.+\\.module\\.(css|sass|scss)$"
     ],
     "modulePaths": [],
     "moduleNameMapper": {
@@ -149,10 +166,14 @@
       "jsx",
       "node"
     ],
-    "watchPlugins": ["jest-watch-typeahead/filename", "jest-watch-typeahead/testname"]
+    "watchPlugins": [
+      "jest-watch-typeahead/filename",
+      "jest-watch-typeahead/testname"
+    ]
   },
   "babel": {
-    "presets": ["react-app"]
-
+    "presets": [
+      "react-app"
+    ]
   }
 }
