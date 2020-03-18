@@ -1,0 +1,36 @@
+@import '../../Var.scss';
+
+.CardBody {
+  text-decoration: none;
+  color: $cDark;
+  text-align: start;
+  min-width: 340px !important;
+
+  .CardOver {
+    height: 248px;
+    border-bottom: $cYellow 8px solid;
+    overflow: hidden;
+  }
+
+  .CardIMG {
+    transition: ease all 0.3s !important;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .CardText {
+    padding: 52px 31px;
+  }
+}
+
+.CardBody:hover {
+  h2 {
+    color: $cYellow;
+  }
+
+  .CardIMG {
+    transform: scale(1.1);
+  }
+}

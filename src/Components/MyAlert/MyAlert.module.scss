@@ -1,0 +1,10 @@
+@import '../../Var.scss';
+
+.MyAlert {
+  position: fixed;
+  z-index: 2;
+  bottom: 1rem;
+  padding: 16px 32px;
+  margin: 0 auto;
+  background: $cYellow;
+}
