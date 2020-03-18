@@ -6,7 +6,7 @@ import MenuDesktopView from './MenuDesktop';
 import GlobalData from '../../Services/GlobalData';
 
 interface IState {
-    isMobile : boolean;
+    isMobile : any;
 }
 
 export default class MenuView extends Component < {},
@@ -15,7 +15,7 @@ IState > {
     constructor(props : any) {
         super(props);
         this.state = {
-            isMobile: false
+            isMobile: GlobalData.isMobile
         }
 
     }
@@ -37,10 +37,9 @@ IState > {
     render() {
         return (
             <div>
-                {/* {!this.state.isMobile */}
-                    {/* ?  */}
-                    <MenuDesktopView/>
-                     {/* : <MenuMobileView/>} */}
+                {!this.state.isMobile
+                    ? <MenuDesktopView/>
+                    : <MenuMobileView/>}
             </div>
 
         )
