@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/TeachersGuild/static/css/main.8cf54c61.chunk.css",
-    "main.js": "/TeachersGuild/static/js/main.8c35c350.chunk.js",
-    "main.js.map": "/TeachersGuild/static/js/main.8c35c350.chunk.js.map",
+    "main.css": "/TeachersGuild/static/css/main.e4da5658.chunk.css",
+    "main.js": "/TeachersGuild/static/js/main.66941112.chunk.js",
+    "main.js.map": "/TeachersGuild/static/js/main.66941112.chunk.js.map",
     "runtime-main.js": "/TeachersGuild/static/js/runtime-main.17ead4d3.js",
     "runtime-main.js.map": "/TeachersGuild/static/js/runtime-main.17ead4d3.js.map",
     "static/js/2.77a23d92.chunk.js": "/TeachersGuild/static/js/2.77a23d92.chunk.js",
     "static/js/2.77a23d92.chunk.js.map": "/TeachersGuild/static/js/2.77a23d92.chunk.js.map",
     "index.html": "/TeachersGuild/index.html",
-    "precache-manifest.0b16a336f5a049f92afaacd94bcd1681.js": "/TeachersGuild/precache-manifest.0b16a336f5a049f92afaacd94bcd1681.js",
+    "precache-manifest.0c0eac673aa105bab9e7cd5496041b4a.js": "/TeachersGuild/precache-manifest.0c0eac673aa105bab9e7cd5496041b4a.js",
     "service-worker.js": "/TeachersGuild/service-worker.js",
-    "static/css/main.8cf54c61.chunk.css.map": "/TeachersGuild/static/css/main.8cf54c61.chunk.css.map",
+    "static/css/main.e4da5658.chunk.css.map": "/TeachersGuild/static/css/main.e4da5658.chunk.css.map",
     "static/js/2.77a23d92.chunk.js.LICENSE.txt": "/TeachersGuild/static/js/2.77a23d92.chunk.js.LICENSE.txt",
     "static/media/HomePage.module.scss": "/TeachersGuild/static/media/HomeA.bc7ff8a0.jpg",
     "static/media/Screen Shot 2018-12-07 at 1.28.54 PM.png": "/TeachersGuild/static/media/Screen Shot 2018-12-07 at 1.28.54 PM.49c9e788.png",
@@ -25,7 +25,7 @@
   "entrypoints": [
     "static/js/runtime-main.17ead4d3.js",
     "static/js/2.77a23d92.chunk.js",
-    "static/css/main.8cf54c61.chunk.css",
-    "static/js/main.8c35c350.chunk.js"
+    "static/css/main.e4da5658.chunk.css",
+    "static/js/main.66941112.chunk.js"
   ]
 }
