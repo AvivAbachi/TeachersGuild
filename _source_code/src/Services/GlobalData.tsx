@@ -5,9 +5,7 @@ class globalData {
     //     ? ""
     //     : ""; // /app /TeachersGuild  https://avivabachi.github.io/TeachersGuild
 
-    public isMobile() : boolean {
-        return(window.innerWidth <= 980 || window.screen.width <= 980);
-    }
+
     //        Adha Mengis
     public worker : Array < object > = [
         {

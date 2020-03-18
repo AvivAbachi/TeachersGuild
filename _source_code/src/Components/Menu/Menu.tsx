@@ -3,8 +3,6 @@ import styles from './Menu.module.scss';
 import MenuMobileView from './MenuMobile';
 import MenuDesktopView from './MenuDesktop';
 
-import GlobalData from '../../Services/GlobalData';
-
 interface IState {
     isMobile : any;
 }
@@ -15,7 +13,7 @@ IState > {
     constructor(props : any) {
         super(props);
         this.state = {
-            isMobile: GlobalData.isMobile
+            isMobile:  (window.innerWidth <= 980 || window.screen.width <= 980)
         }
 
     }
@@ -30,7 +28,7 @@ IState > {
 
     UpdateMenuType = () => {
         this.setState({
-            isMobile: GlobalData.isMobile()
+            isMobile: (window.innerWidth <= 980 || window.screen.width <= 980)
         })
     };
 
