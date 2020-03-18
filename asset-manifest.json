@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/TeachersGuild/static/css/main.fb747d17.chunk.css",
-    "main.js": "/TeachersGuild/static/js/main.74c6a9fc.chunk.js",
-    "main.js.map": "/TeachersGuild/static/js/main.74c6a9fc.chunk.js.map",
+    "main.js": "/TeachersGuild/static/js/main.922ab4e9.chunk.js",
+    "main.js.map": "/TeachersGuild/static/js/main.922ab4e9.chunk.js.map",
     "runtime-main.js": "/TeachersGuild/static/js/runtime-main.17ead4d3.js",
     "runtime-main.js.map": "/TeachersGuild/static/js/runtime-main.17ead4d3.js.map",
     "static/js/2.77a23d92.chunk.js": "/TeachersGuild/static/js/2.77a23d92.chunk.js",
     "static/js/2.77a23d92.chunk.js.map": "/TeachersGuild/static/js/2.77a23d92.chunk.js.map",
     "index.html": "/TeachersGuild/index.html",
-    "precache-manifest.53e25db685aea18a47ebce12846f8b14.js": "/TeachersGuild/precache-manifest.53e25db685aea18a47ebce12846f8b14.js",
+    "precache-manifest.320710038b3f003f6059e53677791f37.js": "/TeachersGuild/precache-manifest.320710038b3f003f6059e53677791f37.js",
     "service-worker.js": "/TeachersGuild/service-worker.js",
     "static/css/main.fb747d17.chunk.css.map": "/TeachersGuild/static/css/main.fb747d17.chunk.css.map",
     "static/js/2.77a23d92.chunk.js.LICENSE.txt": "/TeachersGuild/static/js/2.77a23d92.chunk.js.LICENSE.txt",
@@ -26,6 +26,6 @@
     "static/js/runtime-main.17ead4d3.js",
     "static/js/2.77a23d92.chunk.js",
     "static/css/main.fb747d17.chunk.css",
-    "static/js/main.74c6a9fc.chunk.js"
+    "static/js/main.922ab4e9.chunk.js"
   ]
 }
