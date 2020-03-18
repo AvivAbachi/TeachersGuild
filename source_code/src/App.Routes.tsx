@@ -16,7 +16,6 @@ export default class AppRoutes extends Component {
 
         return (
             <div>
-                <ScrollToTop/>
                 <MenuComponent/>
                 <Switch>
                     <Route path={"/"} exact component={HomePageView}/>
@@ -26,6 +25,7 @@ export default class AppRoutes extends Component {
 
                 </Switch>
                 <FooterComponent ref={'footer'}/>
+                <ScrollToTop/>
             </div>
         )
     }
