@@ -1,5 +1,42 @@
 @import '../../Var.scss';
 
+nav {
+    z-index: 5;
+    position: fixed;
+    top: 0;
+    height: 62px;
+    padding: 0 25px;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: $cYellow;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .login {
+        margin-left: 29px;
+        align-items: center;
+        display: flex;
+        justify-self: end;
+        a {
+            font-weight: 900;
+            font-size: 15px;
+            color: $cDark;
+            text-align: end;
+            text-decoration: none !important;
+        }
+        a:hover {
+            color: white;
+            small {
+                color: $cDark;
+            }
+        }
+        small {
+            margin-right: 6px;
+        }
+    }
+}
+
 ul {
     list-style-type: none;
     display: flex;

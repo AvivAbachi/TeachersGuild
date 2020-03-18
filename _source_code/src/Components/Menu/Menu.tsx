@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-
+import styles from './Menu.module.scss';
 import MenuMobileView from './MenuMobile';
 import MenuDesktopView from './MenuDesktop';
 
