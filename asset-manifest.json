@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/avivabachi.github.io/TeachersGuild/static/css/main.4ffa8560.chunk.css",
-    "main.js": "/avivabachi.github.io/TeachersGuild/static/js/main.83ef91b6.chunk.js",
-    "main.js.map": "/avivabachi.github.io/TeachersGuild/static/js/main.83ef91b6.chunk.js.map",
+    "main.css": "/avivabachi.github.io/TeachersGuild/static/css/main.e0147428.chunk.css",
+    "main.js": "/avivabachi.github.io/TeachersGuild/static/js/main.2be1ecfd.chunk.js",
+    "main.js.map": "/avivabachi.github.io/TeachersGuild/static/js/main.2be1ecfd.chunk.js.map",
     "runtime-main.js": "/avivabachi.github.io/TeachersGuild/static/js/runtime-main.4d7aa955.js",
     "runtime-main.js.map": "/avivabachi.github.io/TeachersGuild/static/js/runtime-main.4d7aa955.js.map",
-    "static/js/2.77a23d92.chunk.js": "/avivabachi.github.io/TeachersGuild/static/js/2.77a23d92.chunk.js",
-    "static/js/2.77a23d92.chunk.js.map": "/avivabachi.github.io/TeachersGuild/static/js/2.77a23d92.chunk.js.map",
+    "static/js/2.3d7383eb.chunk.js": "/avivabachi.github.io/TeachersGuild/static/js/2.3d7383eb.chunk.js",
+    "static/js/2.3d7383eb.chunk.js.map": "/avivabachi.github.io/TeachersGuild/static/js/2.3d7383eb.chunk.js.map",
     "index.html": "/avivabachi.github.io/TeachersGuild/index.html",
-    "precache-manifest.c3f54c1a49c9540a6e9ae1b783ebfc2b.js": "/avivabachi.github.io/TeachersGuild/precache-manifest.c3f54c1a49c9540a6e9ae1b783ebfc2b.js",
+    "precache-manifest.43c2d20de9c78661fbc742f3064c0b7d.js": "/avivabachi.github.io/TeachersGuild/precache-manifest.43c2d20de9c78661fbc742f3064c0b7d.js",
     "service-worker.js": "/avivabachi.github.io/TeachersGuild/service-worker.js",
-    "static/css/main.4ffa8560.chunk.css.map": "/avivabachi.github.io/TeachersGuild/static/css/main.4ffa8560.chunk.css.map",
-    "static/js/2.77a23d92.chunk.js.LICENSE.txt": "/avivabachi.github.io/TeachersGuild/static/js/2.77a23d92.chunk.js.LICENSE.txt",
+    "static/css/main.e0147428.chunk.css.map": "/avivabachi.github.io/TeachersGuild/static/css/main.e0147428.chunk.css.map",
+    "static/js/2.3d7383eb.chunk.js.LICENSE.txt": "/avivabachi.github.io/TeachersGuild/static/js/2.3d7383eb.chunk.js.LICENSE.txt",
     "static/media/HomePage.module.scss": "/avivabachi.github.io/TeachersGuild/static/media/HomeA.bc7ff8a0.jpg",
     "static/media/Screen Shot 2018-12-07 at 1.28.54 PM.png": "/avivabachi.github.io/TeachersGuild/static/media/Screen Shot 2018-12-07 at 1.28.54 PM.49c9e788.png",
     "static/media/About.module.scss": "/avivabachi.github.io/TeachersGuild/static/media/TheTeachersGuild_Impact_Report_2017_Page_01.089a3723.png",
@@ -24,8 +24,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.4d7aa955.js",
-    "static/js/2.77a23d92.chunk.js",
-    "static/css/main.4ffa8560.chunk.css",
-    "static/js/main.83ef91b6.chunk.js"
+    "static/js/2.3d7383eb.chunk.js",
+    "static/css/main.e0147428.chunk.css",
+    "static/js/main.2be1ecfd.chunk.js"
   ]
 }
