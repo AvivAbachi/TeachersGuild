@@ -1,37 +1,40 @@
 @import '../../Var.scss';
 
 .Card {
-    margin: 20px 10px;
+  margin: 20px 10px;
 
-    .cardIMG {
-        height: 246px;
-        border-bottom: 8px solid #ffc40c;
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
+  .cardIMG {
+    height: 246px;
+    border-bottom: 8px solid #ffc40c;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .CardBody {
+    min-height: 200px;
+    padding: 40px 30px;
+    text-align: start;
+    background-color: white;
+
+    h5 {
+      font-size: 14px;
+      font-weight: bold;
+      color: $cGray !important;
+      margin-bottom: 18px;
     }
 
-    .CardBody {
-        min-height: 200px;
-        padding: 40px 30px;
-        text-align: start;
-        background-color: white;
-        h5 {
-            font-size: 14px;
-            font-weight: bold;
-            color: $cGray !important;
-            margin-bottom: 18px;
-        }
-        h2 {
-            font-size: 26px;
-            margin: 10px 0;
-            font-weight: 400;
-            text-transform: uppercase;
-        }
-        p {
-            font-weight: 500;
-
-            margin-bottom: 16px;
-        }
+    h2 {
+      font-size: 26px;
+      margin: 10px 0;
+      font-weight: 400;
+      text-transform: uppercase;
     }
+
+    p {
+      font-weight: 500;
+
+      margin-bottom: 16px;
+    }
+  }
 }

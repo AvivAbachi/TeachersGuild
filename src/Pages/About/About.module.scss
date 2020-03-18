@@ -1,193 +1,224 @@
 @import '../../Var.scss';
+
 .homePage {
-    margin: 62px 0 0;
+  margin: 62px 0 0;
 }
+
 .stripRow {
-    margin: 0 auto;
-    justify-content: center !important;
-    margin-bottom: 60px;
+  margin: 0 auto 120px;
+  justify-content: center !important;
 }
-.wellcome {
-    min-height: 440px;
-    display: flex;
-    flex-direction: column;
-    text-align: start;
 
-    max-width: 940px;
-    padding: 0 8px;
-    > div {
-        padding: 20px 60px;
-        background: white;
-    }
-    h1 {
-        font-weight: 900;
-        font-size: 60px;
-        margin: 40px 0 20px;
-    }
-    p {
-        font-size: 19px;
-        margin: 0 0 52px;
-    }
+.welcome {
+  min-height: 440px;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+
+  max-width: 940px;
+  padding: 0 8px;
+
+  > div {
+    padding: 20px 60px;
+    background: white;
+  }
+
+  h1 {
+    font-weight: 900;
+    font-size: 60px;
+    margin: 40px 0 20px;
+  }
+
+  p {
+    font-size: 19px;
+    margin: 0 0 52px;
+  }
 }
+
 .impact {
-    min-height: 440px;
-    display: block;
-    padding: 0 8px;
-    max-width: 500px;
-    > div {
-        background-color: $clight;
-    }
-    h1 {
-        text-align: center;
-        padding: 15.5px 0;
-        background-color: #ffc40c;
-        margin: 0 !important;
-        color: #273c48;
-        font-size: 14px;
-        line-height: 19px;
-        font-weight: 700;
-        text-transform: uppercase;
-    }
-    .impactIMG {
-        background-position: 0 0px, 0 0;
-        background-size: cover, 125px;
-        min-height: 200px;
-        padding: 54px 0;
-        background-image: url('../../images/TheTeachersGuild_Impact_Report_2017_Page_01.png');
-        h2 {
-            position: relative;
-            left: 47%;
-            font-size: 2rem;
-        }
-        p {
-            position: relative;
-            left: 47%;
-            margin-bottom: 8px;
-            font-weight: 700;
-        }
-    }
-    form {
-        padding: 35px;
-        background-color: $clight;
-        width: 100%;
-        :nth-child(1n+1) {
-            width: 100%;
-            margin: 10px 0;
-        }
-        .InputEmail {
-            background: none !important;
-            border: none;
-            border-bottom: 2px solid $cDark;
-            font-size: 18px;
+  min-height: 440px;
+  display: block;
+  padding: 0 8px;
+  max-width: 500px;
 
-        }
-        .err {
-            background: none !important;
-            border: none;
-            font-size: 18px;
-            border: 2px solid red;
-        }
-
-        h3 {
-            font-weight: 800;
-
-            span {
-                margin-left: 42px;
-                color: red;
-            }
-        }
-        .Send {
-            font-size: 24px;
-            color: limegreen;
-            text-align: center;
-        }
-    }
-
-}
-.team {
-    text-align: center;
+  > div {
     background-color: $clight;
-    padding: 0 0 100px;
-    .teamContainer {
-        max-width: 940px;
-        margin: 0 auto;
+  }
 
-        .box {
-            padding: 100px 0;
-            h1 {
-                font-size: 50px;
-                font-weight: 900;
-                margin-top: 40px;
-                margin-bottom: 20px;
-            }
-            p {
-                margin: 50px 177px 44px;
-                font-size: 18px;
-            }
-            .worker {
-                justify-content: space-between;
+  h1 {
+    text-align: center;
+    padding: 15.5px 0;
+    background-color: #ffc40c;
+    margin: 0 !important;
+    color: #273c48;
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
 
-            }
-        }
+  .impactIMG {
+    background-position: 0 0px, 0 0;
+    background-size: cover, 125px;
+    min-height: 200px;
+    padding: 54px 0;
+    background-image: url('../../images/TheTeachersGuild_Impact_Report_2017_Page_01.png');
+
+    h2 {
+      position: relative;
+      left: 47%;
+      font-size: 2rem;
     }
+
+    p {
+      position: relative;
+      left: 47%;
+      margin-bottom: 8px;
+      font-weight: 700;
+    }
+  }
+
+  form {
+    padding: 35px;
+    background-color: $clight;
+    width: 100%;
+
+    :nth-child(1n+1) {
+      width: 100%;
+      margin: 10px 0;
+    }
+
+    .InputEmail {
+      background: none !important;
+      border: none;
+      border-bottom: 2px solid $cDark;
+      font-size: 18px;
+
+    }
+
+    .err {
+      background: none !important;
+      font-size: 24px;
+      border: 2px solid red;
+    }
+
+    h3 {
+      font-weight: 800;
+
+      span {
+        margin-left: 42px;
+        color: red;
+      }
+    }
+
+    .Send {
+      font-size: 24px;
+      color: limegreen;
+      text-align: center;
+    }
+  }
+
 }
+
+.team {
+  text-align: center;
+  background-color: $clight;
+  padding: 0 0 100px;
+
+  .teamContainer {
+    max-width: 940px;
+    margin: 0 auto;
+
+    .box {
+      padding: 100px 0;
+
+      h1 {
+        font-size: 50px;
+        font-weight: 900;
+        margin-top: 40px;
+        margin-bottom: 20px;
+      }
+
+      p {
+        margin: 50px 177px 44px;
+        font-size: 18px;
+      }
+
+      .worker {
+        justify-content: space-between;
+
+      }
+    }
+  }
+}
+
 .support {
 
-    padding-top: 160px;
-    padding-bottom: 160px;
-    text-align: center;
-    > div > div {
-        justify-content: center;
-        align-items: center;
-    }
-    h1 {
-        font-size: 50px;
-        display: block;
-        max-width: 752px;
-        margin: 0 auto 75px;
-        padding: 0;
+  padding-top: 160px;
+  padding-bottom: 160px;
+  text-align: center;
+
+  > div > div {
+    justify-content: center;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 50px;
+    display: block;
+    max-width: 752px;
+    margin: 0 auto 75px;
+    padding: 0;
+
+  }
+
+  a {
+    margin-bottom: 39px;
+
+    img {
+      vertical-align: middle;
+      margin: 39px 0;
 
     }
-    a {
-        margin-bottom: 39px;
-        img {
-            vertical-align: middle;
-            margin: 39px 0;
-
-        }
-    }
+  }
 }
+
 @media (max-width: 576px) {
-    .wellcome {
-        padding: 0 48px;
-        > div {
-            padding: 20px 40px;
-        }
-        h1 {
-            font-size: 50px;
-            margin: 0;
-        }
-    }
-    .impact {
-        padding: 0 48px;
+  .welcome {
+    padding: 0 48px;
 
+    > div {
+      padding: 20px 40px;
     }
+
+    h1 {
+      font-size: 50px;
+      margin: 0;
+    }
+  }
+  .impact {
+    padding: 0 48px;
+
+  }
 
 }
+
 @media (max-width: 768px) {
-    .team > .teamContainer > .box > p {
-        margin: 50px 32px 44px !important;
-    }
+  .team > .teamContainer > .box > p {
+    margin: 50px 32px 44px !important;
+  }
 }
+
 @media (max-width: 992px) {
-    .wellcome {
-        margin: 0 auto;
-    }
-    .impact {
-        margin: 0 auto;
-    }
-    .team > .teamContainer > .box > p {
-        margin: 50px 128px 44px;
-    }
+  .welcome, .impact {
+    margin: 0 auto;
+  }
+
+  .team > .teamContainer > .box > p {
+    margin: 50px 128px 44px;
+  }
 }
-@media (max-width: 1200px) {}
+
+//
+//@media (max-width: 1200px) {
+//}

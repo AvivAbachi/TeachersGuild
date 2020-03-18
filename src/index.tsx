@@ -1,18 +1,17 @@
 import React from 'react';
 // import ReactDOM from 'react-dom';
-import { hydrate, render } from "react-dom";
-
+import {hydrate, render} from "react-dom";
 import './index.module.scss';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 // ReactDOM.render(<App />, document.getElementById('root'));
 
-const rootElement:HTMLElement | null = document.getElementById("root");
+const rootElement: HTMLElement | null = document.getElementById('root');
 if (rootElement && rootElement.hasChildNodes()) {
-    hydrate(<App />, rootElement);
+    hydrate(<App/>, rootElement);
 } else {
-    render(<App />, rootElement);
+    render(<App/>, rootElement);
 }
 
 // navigator.userAgent != "ReactSnap"

@@ -1,247 +1,218 @@
 @import '../../Var.scss';
+
 .hero {
+  text-align: center;
+  max-width: 940px;
+
+  > div {
     min-height: 640px;
-    display: flex;
     align-items: center;
-    max-width: 940px;
-    h1 {
-        font-size: 60px;
-        margin: 40px 0 20px;
-    }
-    p {
-        font-size: 19px;
-        margin: 41px 0 25px;
-    }
+  }
+
+  h1 {
+    font-size: 60px;
+    margin: 40px 0 20px;
+  }
+
+  p {
+    font-size: 19px;
+    margin: 41px 0 25px;
+  }
 }
 
-.wellcome {
-    min-height: 440px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    background: white;
-    max-width: 940px;
-    padding: 20px 60px;
-    margin: 0 auto;
-    h1 {
-        font-weight: 900;
-        font-size: 60px;
-        margin: 40px 0 20px;
-    }
-    p {
-        font-size: 19px;
-        margin: 0 0 52px;
-    }
+.welcome {
+  min-height: 440px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background: white;
+  max-width: 940px;
+  padding: 20px 60px;
+  margin: 0 auto;
+
+  h1 {
+    font-weight: 900;
+    font-size: 60px;
+    margin: 40px 0 20px;
+  }
+
+  p {
+    font-size: 19px;
+    margin: 0 0 52px;
+  }
 }
+
 .content {
-    max-width: 940px;
-    padding: 0;
-    h2 {
-        text-align: center;
-        padding: 0;
-        margin: 40px auto 30px;
-        display: block;
-        height: 44px;
-        background: $cYellow;
-    }
-    .list {
-        display: flex;
-        justify-content: space-between;
+  max-width: 940px;
+  padding: 0;
 
-        > div {
-            padding: 1em;
-            margin: 0 15px;
-            max-width: 300px;
-            min-width: 200px;
-            border-top: 2px solid #ffc40c;
-        }
-        :last-child div {
-            display: flex;
-            justify-content: space-between;
-        }
-        h4 > a {
-            text-align: center;
-            text-decoration: none;
-            color: $cDark !important;
-            cursor: pointer;
-        }
-    }
-}
-.creating {
+  h2 {
     text-align: center;
-    background: $clight;
-    padding: 100px 0;
-    display: flex;
+    margin: 40px auto 30px;
+    display: block;
+    padding: 10px;
+    background: $cYellow;
+  }
+
+  .list {
+margin-bottom: 30px;
+    > div>div {
+      padding: 1em;
+      border-top: 2px solid #ffc40c;
+    }
+
+    >div>div:last-child div {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    h4 {
+      margin-top: 0;
+
+      a {
+        text-align: center;
+        text-decoration: none;
+        color: $cDark !important;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.creating {
+  text-align: center;
+  background: $clight;
+  padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  > h1 {
+    font-size: 50px;
+    margin: 0;
+  }
+
+  > h5 {
+    font-size: 18px;
+    margin: 0;
+  }
+}
+
+.collaborations {
+  background: white;
+  margin: 57px 0;
+  max-width: 960px;
+  text-align: start;
+
+  div > div:first-child {
+    padding: 156px 49px 0;
+
+  }
+
+  div > div:last-child {
+    color: white;
+    background-image: url('../../images/BE\ BOLD.png');
+    background-position: center;
+    background-size: cover;
+    min-height: 488px;
+    background-repeat: no-repeat;
+    padding: 274px 40px 40px;
+
+    h2 {
+      font-weight: normal;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+
+    a:active,
+    a:hover {
+      color: $cYellow;
+    }
+  }
+}
+
+.Cardlinks {
+  max-width: 960px;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.teacherStrip {
+  div > div:first-of-type {
+    background: $cYellow;
+    padding: 101px 133px;
+  }
+
+  div > div:last-of-type {
+
+    background-image: url('../../images/HomeA.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.shared {
+  max-width: 940px;
+  margin: 200px auto;
+  padding: 0 161px;
+  text-align: center;
+
+  h1 {
+    font-size: 50px;
+    font-weight: 900;
+  }
+
+  h4 {
+    margin: 10px 0 20px;
+    font-size: 24px;
+  }
+
+  a {
+    background-color: $cYellow;
+    border: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .list {
     flex-direction: column;
     align-items: center;
-    > h1 {
-        font-size: 50px;
-        margin: 0;
+
+    > div {
+      min-width: 90% !important;
     }
-    > h5 {
-        font-size: 18px;
-        margin: 0;
-    }
-    .card {
-        background: white;
-        display: flex;
-        margin: 57px 10px;
-        max-width: 960px;
-        text-align: start;
-        align-items: center;
-        div:first-child {
-            width: 41.66666667%;
-            padding-top: 156px;
-            padding-right: 49px;
-            padding-left: 49px;
-        }
-        div:last-child {
-            width: 58.33333333%;
-            color: white;
-            background-image: url('../../images/BE\ BOLD.png');
-            background-position: center;
-            background-size: cover;
-            min-height: 488px;
-            background-repeat: no-repeat;
-            padding: 274px 40px 40px;
-            a {
-                color: white;
-                text-decoration: none;
-            }
-            a:active,
-            a:hover {
-                color: $cYellow;
-            }
-        }
-    }
-}
-.list2 {
-    display: flex;
-    justify-content: space-between;
-    max-width: 960px;
-    margin: 0 10px;
-    .Limg {
-        height: 248px;
-        border-bottom: $cYellow 8px solid;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-    }
-    .Ltext {
-        color: black;
-        text-align: start;
-        padding: 52px 31px;
-    }
+  }
+  .wellcome > a > {
+    margin: 0 auto !important;
+  }
+  .collaborations > div > div:first-child {
+    order: 2;
+    padding: 36px !important;
+    min-width: 100%;
+
     a {
-        text-decoration: none;
+      margin: 0 auto !important;
     }
-    a:hover {
-        h2 {
-            color: $cYellow;
-        }
-        .Limg {
-            background-size: 115%;
-        }
-    }
-    a:first-of-type {
-        margin-right: 10px;
-        .Limg {
-            transition: ease background-image 5s !important;
-            background-image: url('../../images/59d69e59667c650001e7fffa_chapters.png');
-        }
-    }
-    a:last-of-type {
-        margin-left: 10px;
-        .Limg {
-            background-image: url('../../images/59d69e595c1d490001112530_toolkit.png');
-        }
-    }
-}
-.quart {
+  }
+  .collaborations > div > div:last-child {
+    min-width: 100%;
+  }
+  .teacherStrip > div > div:first-child {
+    padding: 36px;
     display: flex;
-    padding: 0;
-    div:first-of-type {
-        background: $cYellow;
-        padding: 101px 133px;
-        width: 50%;
-        color: $cDark;
-    }
-    div:last-of-type {
-        width: 50%;
-        background-color: red;
-        background-image: url('../../images/HomeA.jpg');
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-}
-.quart2 {
-    max-width: 940px;
-    margin-top: 200px;
-    margin-bottom: 200px;
-    text-align: center;
-    padding-right: 161px;
-    padding-left: 161px;
-    h1 {
-        font-size: 50px;
-        font-weight: 900;
-
-    }
-    h4 {
-        margin: 10px 0 20px;
-        font-size: 24px;
-    }
-    a {
-        background-color: $cYellow;
-        border: none;
-    }
-}
-@media (max-width: 900px) {
-    .list {
-        flex-direction: column;
-        align-items: center;
-        > div {
-            min-width: 90% !important;
-        }
-    }
-
-    .card {
-        flex-direction: column-reverse;
-        margin: 0;
-        padding: 0;
-        width: 100vw;
-        div:first-child {
-            padding: 36px !important;
-            min-width: 100%;
-            a {
-                margin: 0 auto !important;
-            }
-
-        }
-        div:last-child {
-            min-width: 100%;
-
-        }
-
-    }
-    .list2 {
-        max-width: 445px;
-        flex-direction: column;
-
-    }
-    .quart {
-        flex-direction: column;
-        div:first-child {
-            padding: 36px;
-            width: 100% !important;
-        }
-        div:last-child {
-            width: 100% !important;
-            height: 400px;
-        }
-
-    }
-    .quart2 {
-        padding: 81px;
-    }
+    align-items: center;
+  }
+  .teacherStrip > div > div:last-child {
+    padding: 36px;
+    align-self: center;
+    min-height: 400px;
+  }
+  .shared {
+    padding: 81px;
+  }
 }

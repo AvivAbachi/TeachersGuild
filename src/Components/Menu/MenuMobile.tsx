@@ -6,14 +6,16 @@ import GlobalData from "../../Services/GlobalData";
 import TGLogo from "./TGLogo.png";
 import {Button} from 'reactstrap';
 
-interface IProps {}
-interface IState {
-    isExpanded : boolean;
+interface IProps {
 }
 
-export default class Mobile extends Component < IProps,
-IState > {
-    constructor(props : IProps) {
+interface IState {
+    isExpanded: boolean;
+}
+
+export default class Mobile extends Component <IProps,
+    IState> {
+    constructor(props: IProps) {
         super(props);
         this.state = {
             isExpanded: false
@@ -30,17 +32,17 @@ IState > {
 
     render() {
         return (
-            <div className={menuStyles.menuStyle} >
+            <div className={menuStyles.menuStyle}>
                 <nav>
                     <Button className={styles.btn} onClick={e => this.toggleMenu()}>
                         <i
                             key={'dsa'}
                             className={"fas fa-bars fa-2x"}
                             style={{
-                            color: this.state.isExpanded
-                                ? "white"
-                                : ""
-                        }}/>
+                                color: this.state.isExpanded
+                                    ? "white"
+                                    : ""
+                            }}/>
                     </Button>
                     <NavLink to={"/"}><img
                         src={TGLogo}
@@ -59,18 +61,18 @@ IState > {
                 </nav>
                 {this.state.isExpanded
                     ? <div className={styles.mBG} onClick={e => this.toggleMenu(false)}>
-                            <div className={styles.mNav}>
-                                <a href={GlobalData.noLink}>Programs</a>
-                                <a href={GlobalData.noLink}>Collaborations</a>
-                                <a href={GlobalData.noLink}>Chapters</a>
-                                <a href={GlobalData.noLink}>Approach</a>
-                                <NavLink
-                                    activeClassName={styles.active}
-                                    to="/About"
-                                    onClick={e => this.toggleMenu(false)}>About US</NavLink>
-                                <a href={GlobalData.noLink}>Work With Us</a>
-                            </div>
+                        <div className={styles.mNav}>
+                            <a href={GlobalData.noLink}>Programs</a>
+                            <a href={GlobalData.noLink}>Collaborations</a>
+                            <a href={GlobalData.noLink}>Chapters</a>
+                            <a href={GlobalData.noLink}>Approach</a>
+                            <NavLink
+                                activeClassName={styles.active}
+                                to="/About"
+                                onClick={e => this.toggleMenu(false)}>About US</NavLink>
+                            <a href={GlobalData.noLink}>Work With Us</a>
                         </div>
+                    </div>
                     : null}
             </div>
         );

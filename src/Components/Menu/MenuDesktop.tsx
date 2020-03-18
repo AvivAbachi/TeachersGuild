@@ -4,16 +4,19 @@ import styles from './MenuDesktop.module.scss';
 import {NavLink} from 'react-router-dom';
 import GlobalData from "../../Services/GlobalData";
 import TGLogo from "./TGLogo.png";
-import MenuPograms from "./MenuPograms"
-interface IProps {}
-interface IState {
-    showProgramsSubmenu : boolean;
-    menuIcon : string;
+import MenuPrograms from "./MenuPrograms"
+
+interface IProps {
 }
 
-export default class Desktop extends Component < IProps,
-IState > {
-    constructor(props : IProps) {
+interface IState {
+    showProgramsSubmenu: boolean;
+    menuIcon: string;
+}
+
+export default class Desktop extends Component <IProps,
+    IState> {
+    constructor(props: IProps) {
         super(props);
         this.state = {
             showProgramsSubmenu: false,
@@ -46,7 +49,7 @@ IState > {
                     </NavLink>
                     <ul className={styles.menu}>
                         <li onClick={e => this.toggleProgramSub()}>
-                            <p >Programs<i className={this.state.menuIcon}/>
+                            <p>Programs<i className={this.state.menuIcon}/>
                             </p>
                         </li>
                         <li>
@@ -76,7 +79,7 @@ IState > {
                     </div>
                 </nav>
                 {this.state.showProgramsSubmenu
-                    ? <MenuPograms CallClose={() => this.toggleProgramSub(false)}/>
+                    ? <MenuPrograms CallClose={() => this.toggleProgramSub(false)}/>
                     : null}
             </div>
         )

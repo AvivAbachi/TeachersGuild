@@ -1,28 +1,28 @@
 @import '../../Var.scss';
+
 .btn {
-    background: none;
-    text-align: center;
-    display: block;
-    width: 240px;
-    border: $cDark 2px solid;
-    padding: 17px 15px;
-    transition: background-color 108ms ease;
-    text-decoration: none !important;
-    cursor: pointer;
-    border-radius: 0;
-    color: $cDark;
-    font-weight: 900;
-    transition: all ease 0.3s;
+  background: none;
+  text-align: center;
+  display: block;
+  width: 240px;
+  border: $cDark 2px solid;
+  padding: 17px 15px;
+  text-decoration: none !important;
+  cursor: pointer;
+  border-radius: 0;
+  color: $cDark;
+  font-weight: 900;
+  transition: all ease 0.3s !important;
 }
 .btn:hover {
-    background-color: $cDark;
-    color: white;
+  background-color: $cDark;
+  color: white;
 }
 
 .btnDisabled {
-    background-color: gray !important;
-    color: darkgray !important;
-    opacity: 0.4 !important;
-    border: none !important;
-    cursor: default !important;
+  background-color: gray !important;
+  color: darkgray !important;
+  opacity: 0.4 !important;
+  border: none !important;
+  cursor: default !important;
 }

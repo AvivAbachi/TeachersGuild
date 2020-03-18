@@ -21,27 +21,29 @@ import supIMG3 from '../../images/support/centerbridge.png';
 import supIMG4 from '../../images/support/marty.png';
 import supIMG5 from '../../images/support/koshland.png';
 
-interface Istate {
-    btnDisable : boolean;
-    err : boolean;
+interface iState {
+    btnDisable: boolean;
+    emailError: boolean;
 }
 
-export default class AboutView extends Component < {},
-Istate > {
-    constructor(props : any) {
+export default class AboutView extends Component <{},
+    iState> {
+    constructor(props: any) {
         super(props);
         this.state = {
-            err: false,
+            emailError: false,
             btnDisable: false
         };
     }
-    cheakEmail = (event : any) => {
-        this.setState({err: true})
-    }
-    handelSub = (e : any) => {
+
+    checkEmail = (event: any) => {
+        this.setState({emailError: true});
+    };
+    handelSub = (e: any) => {
         this.setState({btnDisable: true});
         e.preventDefault();
-    }
+    };
+
     render() {
         return (
             <div>
@@ -49,13 +51,13 @@ Istate > {
                     <title>{"The Teachers Guild"}</title>
                     <meta name="description" content={"The Teachers Guild"}/>
                 </Helmet>
-                <div className={styles.homePage + ' ' + appStyles["page-content"]}>
+                <div className={styles.homePage}>
                     <Strip
                         bgImg={StripIMG}
                         height={780}
                         caption={`Educators — They’re just like us! Teams from New York, Georgia, and California celebrate the kick-off of Chapters.`}>
                         <Row className={styles.stripRow}>
-                            <Col className={styles.wellcome}>
+                            <Col className={styles.welcome}>
                                 <div>
                                     <h1>Transforming Teaching Into A Creative Force</h1>
                                     <p>
@@ -67,37 +69,39 @@ Istate > {
                                         time for teachers is now.
                                     </p>
                                 </div>
-                            </Col >
+                            </Col>
                             <Col className={styles.impact}>
                                 <div>
                                     <h1>SEE OUR IMPACT</h1>
                                     <div className={styles.impactIMG}>
-                                        <p >2016-2017</p>
+                                        <p>2016-2017</p>
                                         <h2>Impact
                                             <br/>Report</h2>
                                     </div>
                                     <form onSubmit={this.handelSub} method="none">
                                         <p>
-                                            Enter your email to download our Impact Report and read stories about teachers
+                                            Enter your email to download our Impact Report and read stories about
+                                            teachers
                                             who are creating change for their students and schools.
                                         </p>
                                         <div>
                                             {!this.state.btnDisable
                                                 ? <label>
-                                                        <h3>
-                                                            Email Address
-                                                            <span>*</span><br/>
-                                                        </h3>
-                                                        <input
-                                                            type="email"
-                                                            name="EMAIL"
-                                                            id="idEmail"
-                                                            className={this.state.err?styles.err:styles.InputEmail}
-                                                            required={true}
-                                                            onInvalid ={this.cheakEmail}
-                                                            onBlur ={this.cheakEmail}
-                                                            />
-                                                    </label>
+                                                    <h3>
+                                                        Email Address
+                                                        <span>*</span><br/>
+                                                    </h3>
+                                                    <input
+                                                        type="email"
+                                                        name="EMAIL"
+                                                        id="idEmail"
+                                                        className={this.state.emailError
+                                                            ? styles.err
+                                                            : styles.InputEmail}
+                                                        required={true}
+                                                        onInvalid={this.checkEmail}
+                                                        onBlur={this.checkEmail}/>
+                                                </label>
                                                 : null}
                                             {this.state.btnDisable
                                                 ? <h4 className={styles.Send}>Thank you for subscribing!</h4>
@@ -126,13 +130,12 @@ Istate > {
                                 <Button label={"CONTACT US"}/>
                             </div>
                             <Row noGutters={true} className={styles.worker}>
-                                       {
-                                    (workerJSON as Array<object>).map((item : any, index : number) => <Card
-                                        cardIMG={item.cardIMG}
-                                        job={item.job}
-                                        name={item.name}
-                                        text={item.text}
-                                        key={index}/>)}
+                                {(workerJSON as Array<object>).map((item: any, index: number) => <Card
+                                    cardIMG={item.cardIMG}
+                                    job={item.job}
+                                    name={item.name}
+                                    text={item.text}
+                                    key={index}/>)}
                             </Row>
                         </div>
                     </Container>

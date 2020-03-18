@@ -1,9 +1,9 @@
 import React, {Component} from 'react'
-import styles from './MenuPograms.module.scss';
+import styles from './MenuPrograms.module.scss';
 import GlobalData from "../../Services/GlobalData";
 import {ICallCloseProps} from '../../Models/interfaces'
 
-export default class Pograms extends Component < ICallCloseProps, {} > {
+export default class MenuPrograms extends Component <ICallCloseProps, {}> {
     render() {
         return (
             <div>
@@ -22,7 +22,7 @@ export default class Pograms extends Component < ICallCloseProps, {} > {
                         </a>
                     </div>
                 </div>
-                <div className={styles.bgDark} onClick={this.props.CallClose}></div>
+                <div className={styles.bgDark} onClick={this.props.CallClose}/>
             </div>
         )
     }

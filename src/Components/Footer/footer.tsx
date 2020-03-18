@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import {Link} from "react-router-dom";
 import styles from "./footer.module.scss";
 import {Row, Col} from 'reactstrap'
 import GlobalData from "../../Services/GlobalData";
@@ -12,7 +11,7 @@ export default class Footer extends Component {
     render() {
         return (
             <footer>
-                <Row className={styles.row} >
+                <Row className={styles.row}>
                     <Col md="5" xs={"12"} className={styles.about}>
                         <img src={TGLogo} alt="" width="189"/>
                         <p>A non-profit initiative of PLUSSED at Riverdale Country School and IDEO's
@@ -23,7 +22,7 @@ export default class Footer extends Component {
                         <a href={GlobalData.noLink}>TERMS & CONDITIONS</a>
                         <a href={GlobalData.noLink}>PRIVACY POLICY</a>
                         <a href={GlobalData.noLink}>COOKIES POLICY</a>
-                    </Col >
+                    </Col>
                     <Col md="12" xs={"12"}>
                         <h6>SUPPORTED BY</h6>
                         <div className={styles.support}>
