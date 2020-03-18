@@ -24,7 +24,7 @@ IState > {
     constructor(props : any) {
         super(props);
         this.state = {
-            link :(!props.disable && props.link? props.link:GlobalData.noLink ),
+            link :(!props.disable && props.link? props.link:"#!"),
             aligment :  ( props.aligment == null? "center-div" : props.aligment)
         };
     }
