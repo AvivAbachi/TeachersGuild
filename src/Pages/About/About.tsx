@@ -22,13 +22,13 @@ import supIMG4 from '../../images/support/marty.png';
 import supIMG5 from '../../images/support/koshland.png';
 
 interface iState {
-    btnDisable: boolean;
-    emailError: boolean;
+    btnDisable : boolean;
+    emailError : boolean;
 }
 
-export default class AboutView extends Component <{},
-    iState> {
-    constructor(props: any) {
+export default class AboutView extends Component < {},
+iState > {
+    constructor(props : any) {
         super(props);
         this.state = {
             emailError: false,
@@ -36,10 +36,10 @@ export default class AboutView extends Component <{},
         };
     }
 
-    checkEmail = (event: any) => {
+    checkEmail = (event : any) => {
         this.setState({emailError: true});
     };
-    handelSub = (e: any) => {
+    handelSub = (e : any) => {
         this.setState({btnDisable: true});
         e.preventDefault();
     };
@@ -51,7 +51,7 @@ export default class AboutView extends Component <{},
                     <title>{"The Teachers Guild"}</title>
                     <meta name="description" content={"The Teachers Guild"}/>
                 </Helmet>
-                <div className={styles.homePage}>
+                <div className={appStyles.page}>
                     <Strip
                         bgImg={StripIMG}
                         height={780}
@@ -80,28 +80,27 @@ export default class AboutView extends Component <{},
                                     </div>
                                     <form onSubmit={this.handelSub} method="none">
                                         <p>
-                                            Enter your email to download our Impact Report and read stories about
-                                            teachers
+                                            Enter your email to download our Impact Report and read stories about teachers
                                             who are creating change for their students and schools.
                                         </p>
                                         <div>
                                             {!this.state.btnDisable
                                                 ? <label>
-                                                    <h3>
-                                                        Email Address
-                                                        <span>*</span><br/>
-                                                    </h3>
-                                                    <input
-                                                        type="email"
-                                                        name="EMAIL"
-                                                        id="idEmail"
-                                                        className={this.state.emailError
+                                                        <h3>
+                                                            Email Address
+                                                            <span>*</span><br/>
+                                                        </h3>
+                                                        <input
+                                                            type="email"
+                                                            name="EMAIL"
+                                                            id="idEmail"
+                                                            className={this.state.emailError
                                                             ? styles.err
                                                             : styles.InputEmail}
-                                                        required={true}
-                                                        onInvalid={this.checkEmail}
-                                                        onBlur={this.checkEmail}/>
-                                                </label>
+                                                            required={true}
+                                                            onInvalid={this.checkEmail}
+                                                            onBlur={this.checkEmail}/>
+                                                    </label>
                                                 : null}
                                             {this.state.btnDisable
                                                 ? <h4 className={styles.Send}>Thank you for subscribing!</h4>
@@ -130,7 +129,7 @@ export default class AboutView extends Component <{},
                                 <Button label={"CONTACT US"}/>
                             </div>
                             <Row noGutters={true} className={styles.worker}>
-                                {(workerJSON as Array<object>).map((item: any, index: number, async) => <Card
+                                {(workerJSON as Array < object >).map((item : any, index : number, async) => <Card
                                     cardIMG={item.cardIMG}
                                     job={item.job}
                                     name={item.name}

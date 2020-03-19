@@ -6,17 +6,16 @@ import GlobalData from "../../Services/GlobalData";
 import TGLogo from "./TGLogo.png";
 import MenuPrograms from "./MenuPrograms"
 
-interface IProps {
-}
+interface iProps {}
 
 interface IState {
-    showProgramsSubmenu: boolean;
-    menuIcon: string;
+    showProgramsSubmenu : boolean;
+    menuIcon : string;
 }
 
-export default class Desktop extends Component <IProps,
-    IState> {
-    constructor(props: IProps) {
+export default class Desktop extends Component < iProps,
+IState > {
+    constructor(props : iProps) {
         super(props);
         this.state = {
             showProgramsSubmenu: false,
