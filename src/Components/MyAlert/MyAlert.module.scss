@@ -1,10 +1,46 @@
 @import '../../Var.scss';
+.Fluid {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.Contain {
 
-.MyAlert {
-  position: fixed;
-  z-index: 2;
-  bottom: 1rem;
-  padding: 16px 32px;
-  margin: 0 auto;
-  background: $cYellow;
+    margin: 0 auto;
+    display: flex;
+}
+.body {
+    text-align: start;
+    margin-bottom: 0 !important;
+    color: white !important;
+    padding: 24px 64px;
+    background: $cDark;
+    border-radius: 0;
+    border: none;
+    a {
+        text-decoration: none;
+        color: $cYellow;
+        margin-left: 4px;
+        opacity: 1;
+    }
+    a:hover {
+        opacity: 0.5;
+
+    }
+
+    button {
+        opacity: 1 !important;
+        top: 0.75rem !important;
+    }
+    button:hover {
+        opacity: 0.5!important;
+    }
+    span {
+        color: $cYellow !important;
+        font-size: 1.25rem;
+        font-family: Arial, Helvetica, sans-serif;
+        text-shadow: none;
+    }
 }

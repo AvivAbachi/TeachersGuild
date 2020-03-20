@@ -14,7 +14,7 @@ Istate > {
     constructor(props : any) {
         super(props);
         this.state = {
-            high: 200,
+            high: 500,
             redirect: false
         };
     }
@@ -30,7 +30,7 @@ Istate > {
         setTimeout(() => {
             console.log('fdas')
             this.setState({redirect: true})
-        }, 1000);
+        }, 2000);
 
     }
     handelHigh = () => {

@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {Component, Fragment} from 'react';
 
 import {Redirect, Route, Switch} from "react-router-dom";
 import HomePageView from "./Pages/HomePage/HomePage";
@@ -11,7 +11,8 @@ import ScrollToTop from "./Components/ScrollToTop/ScrollToTop";
 import MyAlert from "./Components/MyAlert/MyAlert";
 
 interface iState {
-    isMobile : boolean
+    isMobile : boolean;
+    isAlert : boolean;
 }
 
 export default class AppRoutes extends Component < {},
@@ -19,7 +20,8 @@ iState > {
     constructor(props : any) {
         super(props);
         this.state = {
-            isMobile: (window.innerWidth <= 980 || window.screen.width <= 980)
+            isMobile: (window.innerWidth <= 980 || window.screen.width <= 980),
+            isAlert: true
         }
 
     }
@@ -37,23 +39,28 @@ iState > {
             isMobile: (window.innerWidth <= 980 || window.screen.width <= 980)
         })
     };
-
+    HandelClickAlert = () => {
+        this.setState({isAlert: false})
+    }
     render() {
 
         return (
-            <div>
+            <Fragment>
                 <MenuComponent isMobile={this.state.isMobile}/>
                 <Switch>
                     <Route path={"/"} exact>
                         <HomePageView isMobile={this.state.isMobile}/>
                     </Route>
-                    <Route path={"/About"} component={AboutView}/>
-                    <Route path={"/404"} component={NotFound}/>
+                    <Route path={"/About"} exact component={AboutView}/>
+                    <Route path={"/404"}  component={NotFound}/>
                     <Route component={() => <Redirect to={"/404"}/>}/>
                 </Switch>
                 <FooterComponent ref={'footer'}/>
-                <ScrollToTop/> {/* <MyAlert/> */}
-            </div>
+                <ScrollToTop/> 
+                {this.state.isAlert 
+                    ? <MyAlert CallClose={this.HandelClickAlert}/>
+                    : null}
+            </Fragment>
         )
     }
 }
