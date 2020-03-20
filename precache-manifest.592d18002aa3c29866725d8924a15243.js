@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ffb1fb9d2dc9b1a966eadee344caafc6",
+    "revision": "068f56554a12c68931fee44169bf19d5",
     "url": "/TeachersGuild/index.html"
   },
   {
-    "revision": "5dad8a302b4ef36c2965",
-    "url": "/TeachersGuild/static/css/main.9bf161ff.chunk.css"
+    "revision": "18365cc63cae7eabbdb8",
+    "url": "/TeachersGuild/static/css/main.25628323.chunk.css"
   },
   {
-    "revision": "b68e706bb302fd634036",
-    "url": "/TeachersGuild/static/js/2.4c0ebf56.chunk.js"
+    "revision": "f8e8a90f1cbfd09b99a5",
+    "url": "/TeachersGuild/static/js/2.5859a219.chunk.js"
   },
   {
     "revision": "9a0e6ad7df4effc3aa6ea7f039958117",
-    "url": "/TeachersGuild/static/js/2.4c0ebf56.chunk.js.LICENSE.txt"
+    "url": "/TeachersGuild/static/js/2.5859a219.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "5dad8a302b4ef36c2965",
-    "url": "/TeachersGuild/static/js/main.65dbd007.chunk.js"
+    "revision": "18365cc63cae7eabbdb8",
+    "url": "/TeachersGuild/static/js/main.6b1f8c62.chunk.js"
   },
   {
     "revision": "817e8f55b5affb3a3770",
@@ -33,7 +33,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   },
   {
     "revision": "49848a8a08d7c663eccdee99e5d8d45a",
-    "url": "/TeachersGuild/static/media/BE BOLD.49848a8a.png"
+    "url": "/TeachersGuild/static/media/BEBOLD.49848a8a.png"
   },
   {
     "revision": "bc7ff8a0f9504a9b3e33d6310691b001",
