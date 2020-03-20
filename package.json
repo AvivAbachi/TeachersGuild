@@ -72,6 +72,7 @@
     "postcss-preset-env": "6.7.0",
     "postcss-safe-parser": "4.0.1",
     "query-string": "^6.11.1",
+    "rc-tween-one": "^2.6.8",
     "react": "^16.13.0",
     "react-app-polyfill": "^1.0.6",
     "react-dev-utils": "^10.2.0",

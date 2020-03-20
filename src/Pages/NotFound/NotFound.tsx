@@ -1,8 +1,6 @@
 import React, {Component} from 'react';
 import Helmet from "react-helmet";
-import {Redirect, Route, Switch} from "react-router-dom";
-import GlobalData from "../../Services/GlobalData";
-import HomePageView from "../HomePage/HomePage";
+import {Redirect} from "react-router-dom";
 import styles from './NotFound.module.scss';
 
 interface Istate {

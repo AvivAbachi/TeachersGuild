@@ -1,56 +1,54 @@
 @import '../../Var.scss';
 
 button {
-  background: none !important;
-  border: none !important;
-  box-shadow: none !important;
-  outline: none;
-  cursor: pointer;
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    outline: none;
+    cursor: pointer;
 
-  i {
-    color:$cDark;
-  }
+    i {
+        color: $cDark;
+    }
 }
 
 .mBG {
-  display: flex;
-  position: fixed;
-  top: 62px;
-  background-color: $cDark;
-  height: 100%;
-  width: 100%;
-  z-index: 1;
+    display: flex;
+    position: fixed;
+    top: 62px;
+    background-color: $cDark;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
 }
 
 .mNav {
-  display: flex;
-  flex-flow: column;
-  position: fixed;
-  top: 62px;
-  width: 100%;
-  background: $cDark;
-  z-index: 2;
+    display: flex;
+    flex-flow: column;
+    position: fixed;
+    top: 62px;
+    width: 100%;
+    background: $cDark;
+    z-index: 2;
 
-  a {
-    align-self: end;
-    font-size: 18px;
-    font-weight: 900;
-    color: white;
-    padding: 20px 30px;
-    text-decoration: none !important;
+    a {
+        align-self: end;
+        font-size: 18px;
+        font-weight: 900;
+        color: white;
+        padding: 20px 30px;
+        text-decoration: none !important;
 
-  }
+    }
+    a:nth-of-type(2),
+    a:nth-of-type(3) {
+        padding: 20px 50px;
+    }
+    a:hover {
+        color: $cYellow;
+    }
 
-  a:nth-of-type(2),
-  a:nth-of-type(3) {
-    padding: 20px 50px;
-  }
-
-  a:hover {
-    color: $cYellow;
-  }
-
-  .active {
-    color: $cYellow;
-  }
+    .active {
+        color: $cYellow;
+    }
 }

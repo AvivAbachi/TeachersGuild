@@ -1,11 +1,12 @@
 @import '../../Var.scss';
 
 .hero {
+    margin-top: 62px;
     text-align: center;
     max-width: 940px;
 
     > div {
-        min-height: 640px;
+        min-height: 578px;
         align-items: center;
     }
 
@@ -108,7 +109,7 @@
     }
     div > div:last-child {
         color: white;
-        background-image: url('../../images/BE\ BOLD.png');
+        background-image: url('../../assets/BEBOLD.png');
         background-position: center;
         background-size: cover;
         min-height: 488px;
@@ -144,7 +145,7 @@
     }
     div > div:last-of-type {
 
-        background-image: url('../../images/HomeA.jpg');
+        background-image: url('../../assets/HomeA.jpg');
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;

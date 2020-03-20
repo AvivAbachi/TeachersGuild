@@ -1,7 +1,6 @@
 import React, {Component} from 'react'
 import styles from './Button.module.scss';
 import appStyles from '../../App.module.scss';
-// import {NavLink} from 'react-router-dom';
 import GlobalData from "../../Services/GlobalData";
 
 type aligments = ("center-div" | "left-align-div" | "right-align-div");
@@ -25,7 +24,7 @@ export default class Button extends Component <IProps,
     constructor(props: any) {
         super(props);
         this.state = {
-            link: (!props.disable && props.link ? props.link : "#!"),
+            link: (!props.disable && props.link ? props.link : GlobalData.noLink.toString()),
             aligment: (props.aligment == null ? "center-div" : props.aligment)
         };
     }

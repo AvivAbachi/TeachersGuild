@@ -1,7 +1,7 @@
 class globalData {
     // constructor(){}
     public readonly noLink: string = '#!';
-    public readonly baseRoute: string = (window.location.hostname == 'localhost')
+    public readonly baseRoute: string = (window.location.hostname === 'localhost')
         ? ''
         : '/TeachersGuild'
 }

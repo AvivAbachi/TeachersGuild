@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {Component, Fragment} from 'react';
 import GlobalData from "../../Services/GlobalData";
 import appStyles from '../../App.module.scss';
 import styles from './HomePage.module.scss';
@@ -9,11 +9,11 @@ import Strip from '../../Components/Strip/Strip'
 import {Col, Container, Row} from "reactstrap";
 import Helmet from "react-helmet";
 
-import LogoPrimary from '../../images/TheTeachersGuild_Logo_Primary.png'
-import StripIMG from '../../images/o.png'
-import iCatrina from '../../images/Screen Shot 2018-12-07 at 1.28.54 PM.png'
-import toolkit from '../../images/59d69e595c1d490001112530_toolkit.png'
-import chapters from '../../images/59d69e59667c650001e7fffa_chapters.png'
+import LogoPrimary from '../../assets/TheTeachersGuild_Logo_Primary.png'
+import StripIMG from '../../assets/o.png'
+import iCatrina from '../../assets/Screen Shot 2018-12-07 at 1.28.54 PM.png'
+import toolkit from '../../assets/59d69e595c1d490001112530_toolkit.png'
+import chapters from '../../assets/59d69e59667c650001e7fffa_chapters.png'
 
 
 interface iProps {
@@ -24,7 +24,7 @@ interface iProps {
 export default class HomePageView extends Component <iProps, {}> {
     render() {
         return (
-            <div className={appStyles.page}>
+            <Fragment>
                 <Helmet>
                     <title>{"The Teachers Guild"}</title>
                     <meta name="description" content={"The Teachers Guild"}/>
@@ -159,7 +159,7 @@ export default class HomePageView extends Component <iProps, {}> {
                     <Button label={"JOIN US"}/>
 
                 </Container>
-            </div>
+            </Fragment>
 
         )
     }

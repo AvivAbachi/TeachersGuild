@@ -1,8 +1,7 @@
-import React, {Component, Fragment} from 'react'
+import React, {Component} from 'react'
 import styles from './MyAlert.module.scss';
-import {UncontrolledAlert, Container, Col, Row} from 'reactstrap';;
-// import {NavLink} from 'react-router-dom'; import GlobalData from
-// "../../Services/GlobalData";
+import {UncontrolledAlert} from 'reactstrap';;
+
 interface IProps {
     CallClose : any
 }

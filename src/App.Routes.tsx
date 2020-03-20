@@ -20,19 +20,18 @@ iState > {
     constructor(props : any) {
         super(props);
         this.state = {
-            isMobile: (window.innerWidth <= 980 || window.screen.width <= 980),
+            isMobile: window.innerWidth <= 980 || window.screen.width <= 980,
             isAlert: true
         }
 
     }
-    componentWillMount() {
-        this.UpdateMenuType();
+    componentDidMount() {
         window.addEventListener('resize', this.UpdateMenuType.bind(this))
     }
-
     componentWillUnmount() {
         window.removeEventListener('resize', this.UpdateMenuType.bind(this))
     }
+
 
     UpdateMenuType = () => {
         this.setState({
@@ -52,12 +51,11 @@ iState > {
                         <HomePageView isMobile={this.state.isMobile}/>
                     </Route>
                     <Route path={"/About"} exact component={AboutView}/>
-                    <Route path={"/404"}  component={NotFound}/>
+                    <Route path={"/404"} component={NotFound}/>
                     <Route component={() => <Redirect to={"/404"}/>}/>
                 </Switch>
                 <FooterComponent ref={'footer'}/>
-                <ScrollToTop/> 
-                {this.state.isAlert 
+                <ScrollToTop/> {this.state.isAlert
                     ? <MyAlert CallClose={this.HandelClickAlert}/>
                     : null}
             </Fragment>
