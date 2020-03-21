@@ -2,21 +2,29 @@ import React, {Component, Fragment} from 'react';
 import './Menu.module.scss';
 import MenuMobileView from './MenuMobile';
 import MenuDesktopView from './MenuDesktop';
+import {inject, observer} from "mobx-react";
+import GlobalStore from '../../GlobalStore';
 
 interface iProps {
     isMobile : boolean;
+    GlobalStore?:GlobalStore
 }
 interface iState {
     scroll : number;
 }
 
+@inject('GlobalStore')
+@observer
 export default class MenuView extends Component < iProps,
 iState > {
+    private _store?: GlobalStore;
+    
     constructor(props : iProps) {
         super(props);
         this.state = {
             scroll: 0
         };
+        this._store = this.props.GlobalStore;
     }
     componentDidMount() {
         window.addEventListener('scroll', this.HandelScroll.bind(this))

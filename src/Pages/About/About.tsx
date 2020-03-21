@@ -1,6 +1,7 @@
 import React, {Component, Fragment} from 'react';
 import Helmet from "react-helmet";
 import {Container, Row, Col} from 'reactstrap'
+import {inject, observer} from "mobx-react";
 
 import GlobalData from "../../Services/GlobalData";
 
@@ -25,6 +26,8 @@ interface iState {
     emailError : boolean;
 }
 
+@inject('GlobalStore')
+@observer
 export default class AboutView extends Component < {},
 iState > {
     constructor(props : any) {

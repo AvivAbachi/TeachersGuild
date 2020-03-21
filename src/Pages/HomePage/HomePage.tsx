@@ -1,6 +1,7 @@
 import React, {Component, Fragment} from 'react';
 import GlobalData from "../../Services/GlobalData";
 import styles from './HomePage.module.scss';
+import {inject, observer} from "mobx-react";
 
 import Button from '../../Components/Button/Button';
 import CardLink from '../../Components/CardLink/CardLink';
@@ -20,6 +21,8 @@ interface iProps {
 }
 
 
+@inject('GlobalStore')
+@observer
 export default class HomePageView extends Component <iProps, {}> {
     render() {
         return (
