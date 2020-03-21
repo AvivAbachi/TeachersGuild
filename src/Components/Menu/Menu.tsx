@@ -4,6 +4,7 @@ import MenuMobileView from './MenuMobile';
 import MenuDesktopView from './MenuDesktop';
 import {inject, observer} from "mobx-react";
 import GlobalStore from '../../GlobalStore';
+import { toJS } from 'mobx';
 
 interface iProps {
     isMobile : boolean;
@@ -25,12 +26,14 @@ iState > {
             scroll: 0
         };
         this._store = this.props.GlobalStore;
+        console.log(toJS(this._store?.queryParam));
     }
     componentDidMount() {
-        window.addEventListener('scroll', this.HandelScroll.bind(this))
+        window.addEventListener('scroll', this.HandelScroll.bind(this));
     }
     componentWillUnmount() {
-        window.removeEventListener('scroll', this.HandelScroll.bind(this))
+        window.removeEventListener('scroll', this.HandelScroll.bind(this));
+        this._store?.clearEvents();
     }
 
     // static getDerivedStateFromProps(nextProps : iProps, prevState : iState) {

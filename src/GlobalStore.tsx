@@ -18,6 +18,10 @@ export default class GlobalStore {
       this.EE.emit('lang-changed');//fire event to subscribers
     }
 
+    public clearEvents(){
+      this.EE.removeAllListeners();
+    }
+
     @action
     setPageNavParams(locationUrl : string, queryParam : any) : void {//changes obeservable
         this.locationUrl = locationUrl;
