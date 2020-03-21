@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/TeachersGuild/static/css/main.25628323.chunk.css",
-    "main.js": "/TeachersGuild/static/js/main.8a8a7216.chunk.js",
-    "main.js.map": "/TeachersGuild/static/js/main.8a8a7216.chunk.js.map",
+    "main.js": "/TeachersGuild/static/js/main.3cbd0088.chunk.js",
+    "main.js.map": "/TeachersGuild/static/js/main.3cbd0088.chunk.js.map",
     "runtime-main.js": "/TeachersGuild/static/js/runtime-main.17ead4d3.js",
     "runtime-main.js.map": "/TeachersGuild/static/js/runtime-main.17ead4d3.js.map",
-    "static/js/2.50daa4db.chunk.js": "/TeachersGuild/static/js/2.50daa4db.chunk.js",
-    "static/js/2.50daa4db.chunk.js.map": "/TeachersGuild/static/js/2.50daa4db.chunk.js.map",
+    "static/js/2.ec9c4afe.chunk.js": "/TeachersGuild/static/js/2.ec9c4afe.chunk.js",
+    "static/js/2.ec9c4afe.chunk.js.map": "/TeachersGuild/static/js/2.ec9c4afe.chunk.js.map",
     "index.html": "/TeachersGuild/index.html",
-    "precache-manifest.d9af1ea49e0566780d49f1c7107e463c.js": "/TeachersGuild/precache-manifest.d9af1ea49e0566780d49f1c7107e463c.js",
+    "precache-manifest.eb30ddfc6624d9a77e62c38c1de4b9df.js": "/TeachersGuild/precache-manifest.eb30ddfc6624d9a77e62c38c1de4b9df.js",
     "service-worker.js": "/TeachersGuild/service-worker.js",
     "static/css/main.25628323.chunk.css.map": "/TeachersGuild/static/css/main.25628323.chunk.css.map",
-    "static/js/2.50daa4db.chunk.js.LICENSE.txt": "/TeachersGuild/static/js/2.50daa4db.chunk.js.LICENSE.txt",
+    "static/js/2.ec9c4afe.chunk.js.LICENSE.txt": "/TeachersGuild/static/js/2.ec9c4afe.chunk.js.LICENSE.txt",
     "static/media/59d69e595c1d490001112530_toolkit.png": "/TeachersGuild/static/media/59d69e595c1d490001112530_toolkit.a3ee32d1.png",
     "static/media/59d69e59667c650001e7fffa_chapters.png": "/TeachersGuild/static/media/59d69e59667c650001e7fffa_chapters.41c06208.png",
     "static/media/HomePage.module.scss": "/TeachersGuild/static/media/HomeA.bc7ff8a0.jpg",
@@ -27,8 +27,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.17ead4d3.js",
-    "static/js/2.50daa4db.chunk.js",
+    "static/js/2.ec9c4afe.chunk.js",
     "static/css/main.25628323.chunk.css",
-    "static/js/main.8a8a7216.chunk.js"
+    "static/js/main.3cbd0088.chunk.js"
   ]
 }
