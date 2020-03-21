@@ -6,15 +6,14 @@ import GlobalData from "../../Services/GlobalData";
 
 import styles from './About.module.scss';
 import StyleBtn from '../../Components/Button/Button.module.scss';
-import appStyles from '../../App.module.scss';
 
 import Button from '../../Components/Button/Button';
 import Strip from '../../Components/Strip/Strip';
 import Card from '../../Components/Card/Card';
 
-import workerJSON from './worker.json'
+import worker from './worker'
 
-import StripIMG from '../../assets/chapter-kickoff.png';
+import StripIMG from '../../assets/chapter-kickoff.jpg';
 import supIMG1 from '../../assets/support/robbins_family.png';
 import supIMG2 from '../../assets/support/carnegie-corporation.png';
 import supIMG3 from '../../assets/support/centerbridge.png';
@@ -131,7 +130,7 @@ iState > {
                                 <Button label={"CONTACT US"}/>
                             </div>
                             <Row noGutters={true} className={styles.worker}>
-                                {(workerJSON as Array < object >).map((item : any, index : number, async) => <Card
+                                {worker.list.map((item : any, index : number) => <Card
                                     cardIMG={item.cardIMG}
                                     job={item.job}
                                     name={item.name}

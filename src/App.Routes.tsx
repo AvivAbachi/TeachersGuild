@@ -11,7 +11,6 @@ import ScrollToTop from "./Components/ScrollToTop/ScrollToTop";
 import MyAlert from "./Components/MyAlert/MyAlert";
 
 interface iState {
-    isMobile : boolean;
     isAlert : boolean;
 }
 
@@ -20,7 +19,7 @@ iState > {
     constructor(props : any) {
         super(props);
         this.state = {
-            isMobile: window.innerWidth <= 980 || window.screen.width <= 980,
+
             isAlert: true
         }
 
@@ -31,26 +30,25 @@ iState > {
     componentWillUnmount() {
         window.removeEventListener('resize', this.UpdateMenuType.bind(this))
     }
-
-
     UpdateMenuType = () => {
-        this.setState({
-            isMobile: (window.innerWidth <= 980 || window.screen.width <= 980)
-        })
+        this.forceUpdate();
     };
     HandelClickAlert = () => {
         this.setState({isAlert: false})
     }
     render() {
-
+        let isMobile : boolean = (navigator.userAgent != "ReactSnap")
+            ? (window.innerWidth <= 980 || window.screen.width <= 980)
+            : false;
         return (
             <Fragment>
-                <MenuComponent isMobile={this.state.isMobile}/>
+                <MenuComponent isMobile={isMobile}/>
                 <Switch>
                     <Route path={"/"} exact match>
-                        <HomePageView isMobile={this.state.isMobile}/>
+                        <HomePageView isMobile={isMobile}/>
                     </Route>
                     <Route path={"/About"} match component={AboutView}/>
+
                     <Route path={"/404"} component={NotFound}/>
                     <Route component={() => <Redirect to={"/404"}/>}/>
                 </Switch>

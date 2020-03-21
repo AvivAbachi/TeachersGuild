@@ -1,6 +1,5 @@
 import React, {Component, Fragment} from 'react';
 import GlobalData from "../../Services/GlobalData";
-import appStyles from '../../App.module.scss';
 import styles from './HomePage.module.scss';
 
 import Button from '../../Components/Button/Button';
@@ -10,10 +9,10 @@ import {Col, Container, Row} from "reactstrap";
 import Helmet from "react-helmet";
 
 import LogoPrimary from '../../assets/TheTeachersGuild_Logo_Primary.png'
-import StripIMG from '../../assets/o.png'
+import StripIMG from '../../assets/o.jpg'
 import iCatrina from '../../assets/Screen Shot 2018-12-07 at 1.28.54 PM.png'
-import toolkit from '../../assets/59d69e595c1d490001112530_toolkit.png'
-import chapters from '../../assets/59d69e59667c650001e7fffa_chapters.png'
+import toolkit from '../../assets/59d69e595c1d490001112530_toolkit.jpg'
+import chapters from '../../assets/59d69e59667c650001e7fffa_chapters.jpg'
 
 
 interface iProps {

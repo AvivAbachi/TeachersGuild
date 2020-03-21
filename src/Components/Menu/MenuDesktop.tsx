@@ -6,6 +6,7 @@ import GlobalData from "../../Services/GlobalData";
 import Logo from './tgfooterlogo.png'
 import LogoScroll from './TGLogo.png'
 import MenuPrograms from "./MenuPrograms"
+import { Hash } from 'crypto';
 
 interface iProps {
     scroll : number;
@@ -41,22 +42,22 @@ IState > {
     };
     render() {
         let isScroll : boolean = this.props.scroll > 0.5;
-        let isClass : any = this.state.showProgramsSubmenu ||isScroll
+        let isClass : any = this.state.showProgramsSubmenu || isScroll
             ? styles.scroll
             : styles.notScroll;
         return (
-            <Fragment >
+            <div >
                 <nav
                     style={{
-                    background: `rgba(255,196,12,${!this.state.showProgramsSubmenu
+                    background: `rgba(255,196,12,${ !this.state.showProgramsSubmenu
                         ? this.props.scroll
                         : 1})`
                 }}>
-                    <NavLink to={"/"}>
+                    <NavLink to="/">
                         <img
                             src={(this.state.showProgramsSubmenu || isScroll
-                                ? LogoScroll
-                                : Logo)}
+                            ? LogoScroll
+                            : Logo)}
                             alt="Logo"
                             width='240px'
                             onClick={e => this.toggleProgramSub(false)}/>
@@ -89,8 +90,11 @@ IState > {
 
                     </div>
                     <div className={menuStyles.login}>
-                        <a href={GlobalData.noLink} className={!this.state.showProgramsSubmenu && !isScroll
-                ?menuStyles.notScroll:''}>
+                        <a
+                            href={GlobalData.noLink}
+                            className={!this.state.showProgramsSubmenu && !isScroll
+                            ? menuStyles.notScroll
+                            : ''}>
                             SIGN UP<br/>
                             <small>
                                 or
@@ -103,7 +107,7 @@ IState > {
                     ? <MenuPrograms CallClose={() => this.toggleProgramSub(false)}/>
                     : null
 }
-            </Fragment>
+            </div>
         )
     }
 }

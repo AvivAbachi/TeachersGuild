@@ -35,9 +35,6 @@ IState > {
 
     render() {
         let isScroll : boolean = this.props.scroll > 0.5;
-        let isClass : any = isScroll
-            ? styles.scroll
-            : styles.notScroll;
 
         return (
             <Fragment>
