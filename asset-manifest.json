@@ -1,19 +1,25 @@
 {
   "files": {
     "main.css": "/TeachersGuild/static/css/main.5dc5c22c.chunk.css",
-    "main.js": "/TeachersGuild/static/js/main.4e4d0927.chunk.js",
-    "main.js.map": "/TeachersGuild/static/js/main.4e4d0927.chunk.js.map",
+    "main.js": "/TeachersGuild/static/js/main.529c7fcb.chunk.js",
+    "main.js.map": "/TeachersGuild/static/js/main.529c7fcb.chunk.js.map",
     "runtime-main.js": "/TeachersGuild/static/js/runtime-main.17ead4d3.js",
     "runtime-main.js.map": "/TeachersGuild/static/js/runtime-main.17ead4d3.js.map",
-    "static/js/2.ec9c4afe.chunk.js": "/TeachersGuild/static/js/2.ec9c4afe.chunk.js",
-    "static/js/2.ec9c4afe.chunk.js.map": "/TeachersGuild/static/js/2.ec9c4afe.chunk.js.map",
+    "static/js/2.04fac89c.chunk.js": "/TeachersGuild/static/js/2.04fac89c.chunk.js",
+    "static/js/2.04fac89c.chunk.js.map": "/TeachersGuild/static/js/2.04fac89c.chunk.js.map",
     "index.html": "/TeachersGuild/index.html",
-    "precache-manifest.76a6ade1aca2ba55ad80c39321840423.js": "/TeachersGuild/precache-manifest.76a6ade1aca2ba55ad80c39321840423.js",
+    "precache-manifest.714c41d885774e6574c56c3759ea644c.js": "/TeachersGuild/precache-manifest.714c41d885774e6574c56c3759ea644c.js",
     "service-worker.js": "/TeachersGuild/service-worker.js",
     "static/css/main.5dc5c22c.chunk.css.map": "/TeachersGuild/static/css/main.5dc5c22c.chunk.css.map",
-    "static/js/2.ec9c4afe.chunk.js.LICENSE.txt": "/TeachersGuild/static/js/2.ec9c4afe.chunk.js.LICENSE.txt",
+    "static/js/2.04fac89c.chunk.js.LICENSE.txt": "/TeachersGuild/static/js/2.04fac89c.chunk.js.LICENSE.txt",
     "static/media/59d69e595c1d490001112530_toolkit.jpg": "/TeachersGuild/static/media/59d69e595c1d490001112530_toolkit.8ecd9084.jpg",
     "static/media/59d69e59667c650001e7fffa_chapters.jpg": "/TeachersGuild/static/media/59d69e59667c650001e7fffa_chapters.b1eb4ea3.jpg",
+    "static/media/59dd1bd2bd40a30001d3b2cf_team_molly.jpg": "/TeachersGuild/static/media/59dd1bd2bd40a30001d3b2cf_team_molly.103e2721.jpg",
+    "static/media/59f7ee2573ce9d0001ffa33f_Gaynor.jpg": "/TeachersGuild/static/media/59f7ee2573ce9d0001ffa33f_Gaynor.c0f0c82b.jpg",
+    "static/media/5a6b74b641e4ab00014b430d_English_Alysha-23002.jpg": "/TeachersGuild/static/media/5a6b74b641e4ab00014b430d_English_Alysha-23002.66d40a6c.jpg",
+    "static/media/5a74bd4cdd9b890001e23a9a_Corio_Larry-24594.jpg": "/TeachersGuild/static/media/5a74bd4cdd9b890001e23a9a_Corio_Larry-24594.cee21352.jpg",
+    "static/media/5b58bd917d582b7964d8f646_IMG_2031.jpg": "/TeachersGuild/static/media/5b58bd917d582b7964d8f646_IMG_2031.8f9e69fd.jpg",
+    "static/media/5c927f24b30f710aa47fb4d7_Diaz_Lusmaia-9236.jpg": "/TeachersGuild/static/media/5c927f24b30f710aa47fb4d7_Diaz_Lusmaia-9236.1a66b329.jpg",
     "static/media/HomePage.module.scss": "/TeachersGuild/static/media/HomeA.ace72af6.jpg",
     "static/media/Screen Shot 2018-12-07 at 1.28.54 PM.png": "/TeachersGuild/static/media/Screen Shot 2018-12-07 at 1.28.54 PM.49c9e788.png",
     "static/media/About.module.scss": "/TeachersGuild/static/media/TheTeachersGuild_Impact_Report_2017_Page_01.54b3eb44.jpg",
@@ -27,8 +33,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.17ead4d3.js",
-    "static/js/2.ec9c4afe.chunk.js",
+    "static/js/2.04fac89c.chunk.js",
     "static/css/main.5dc5c22c.chunk.css",
-    "static/js/main.4e4d0927.chunk.js"
+    "static/js/main.529c7fcb.chunk.js"
   ]
 }

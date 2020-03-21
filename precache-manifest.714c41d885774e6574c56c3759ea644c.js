@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8d1432b7c81281485a2264657b91c3b4",
+    "revision": "7c190f8813a6b7fe58457bc22d6d4003",
     "url": "/TeachersGuild/index.html"
   },
   {
-    "revision": "a9631e8a9521c19a3cf0",
+    "revision": "0e6dd2f75f4ba0a4c7e5",
     "url": "/TeachersGuild/static/css/main.5dc5c22c.chunk.css"
   },
   {
-    "revision": "56130a846a621b2388b0",
-    "url": "/TeachersGuild/static/js/2.ec9c4afe.chunk.js"
+    "revision": "ac28b10aee12c244d63b",
+    "url": "/TeachersGuild/static/js/2.04fac89c.chunk.js"
   },
   {
     "revision": "56729d980da09961afe8d497a21eec12",
-    "url": "/TeachersGuild/static/js/2.ec9c4afe.chunk.js.LICENSE.txt"
+    "url": "/TeachersGuild/static/js/2.04fac89c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a9631e8a9521c19a3cf0",
-    "url": "/TeachersGuild/static/js/main.4e4d0927.chunk.js"
+    "revision": "0e6dd2f75f4ba0a4c7e5",
+    "url": "/TeachersGuild/static/js/main.529c7fcb.chunk.js"
   },
   {
     "revision": "817e8f55b5affb3a3770",
@@ -30,6 +30,30 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "b1eb4ea397d7d888a18f1dd2e2043d7a",
     "url": "/TeachersGuild/static/media/59d69e59667c650001e7fffa_chapters.b1eb4ea3.jpg"
+  },
+  {
+    "revision": "103e27214ab443890c655f80082857ed",
+    "url": "/TeachersGuild/static/media/59dd1bd2bd40a30001d3b2cf_team_molly.103e2721.jpg"
+  },
+  {
+    "revision": "c0f0c82b2301f63e31dab2924fc8037f",
+    "url": "/TeachersGuild/static/media/59f7ee2573ce9d0001ffa33f_Gaynor.c0f0c82b.jpg"
+  },
+  {
+    "revision": "66d40a6c4e4e4ab5c28eb2e28c999c4e",
+    "url": "/TeachersGuild/static/media/5a6b74b641e4ab00014b430d_English_Alysha-23002.66d40a6c.jpg"
+  },
+  {
+    "revision": "cee21352a39b2043bff5c444bf206026",
+    "url": "/TeachersGuild/static/media/5a74bd4cdd9b890001e23a9a_Corio_Larry-24594.cee21352.jpg"
+  },
+  {
+    "revision": "8f9e69fd4db5e442965e4ece53c57846",
+    "url": "/TeachersGuild/static/media/5b58bd917d582b7964d8f646_IMG_2031.8f9e69fd.jpg"
+  },
+  {
+    "revision": "1a66b32911f4fef4b2962d9ae4bb8062",
+    "url": "/TeachersGuild/static/media/5c927f24b30f710aa47fb4d7_Diaz_Lusmaia-9236.1a66b329.jpg"
   },
   {
     "revision": "49848a8a08d7c663eccdee99e5d8d45a",
