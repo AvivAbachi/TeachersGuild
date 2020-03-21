@@ -47,10 +47,10 @@ iState > {
             <Fragment>
                 <MenuComponent isMobile={this.state.isMobile}/>
                 <Switch>
-                    <Route path={"/"} exact>
+                    <Route path={"/"} exact match>
                         <HomePageView isMobile={this.state.isMobile}/>
                     </Route>
-                    <Route path={"/About"} exact component={AboutView}/>
+                    <Route path={"/About"} match component={AboutView}/>
                     <Route path={"/404"} component={NotFound}/>
                     <Route component={() => <Redirect to={"/404"}/>}/>
                 </Switch>
