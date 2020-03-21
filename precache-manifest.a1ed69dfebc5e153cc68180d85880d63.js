@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a5000fbc918bd8f3e56fb3105bce920f",
+    "revision": "44c3c20732bce2ce95783b8b14af6983",
     "url": "/TeachersGuild/index.html"
   },
   {
-    "revision": "4bf800bb4fcf4c2594bf",
+    "revision": "d8e60d95ed5498859c9a",
     "url": "/TeachersGuild/static/css/main.a4c75231.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/TeachersGuild/static/js/2.ec9c4afe.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "4bf800bb4fcf4c2594bf",
-    "url": "/TeachersGuild/static/js/main.082b11a3.chunk.js"
+    "revision": "d8e60d95ed5498859c9a",
+    "url": "/TeachersGuild/static/js/main.b0ab5d26.chunk.js"
   },
   {
     "revision": "817e8f55b5affb3a3770",
@@ -56,8 +56,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/TeachersGuild/static/media/centerbridge.fda7354c.png"
   },
   {
-    "revision": "7ea61e30d233693ea50e0fd6ccb62f19",
-    "url": "/TeachersGuild/static/media/chapter-kickoff.7ea61e30.png"
+    "revision": "0c692284299c379fb673d859bf28b2b0",
+    "url": "/TeachersGuild/static/media/chapter-kickoff.0c692284.jpg"
   },
   {
     "revision": "0888d2fff78cafa149acf1a2c324efd3",

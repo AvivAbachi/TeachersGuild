@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/TeachersGuild/static/css/main.a4c75231.chunk.css",
-    "main.js": "/TeachersGuild/static/js/main.082b11a3.chunk.js",
-    "main.js.map": "/TeachersGuild/static/js/main.082b11a3.chunk.js.map",
+    "main.js": "/TeachersGuild/static/js/main.b0ab5d26.chunk.js",
+    "main.js.map": "/TeachersGuild/static/js/main.b0ab5d26.chunk.js.map",
     "runtime-main.js": "/TeachersGuild/static/js/runtime-main.17ead4d3.js",
     "runtime-main.js.map": "/TeachersGuild/static/js/runtime-main.17ead4d3.js.map",
     "static/js/2.ec9c4afe.chunk.js": "/TeachersGuild/static/js/2.ec9c4afe.chunk.js",
     "static/js/2.ec9c4afe.chunk.js.map": "/TeachersGuild/static/js/2.ec9c4afe.chunk.js.map",
     "index.html": "/TeachersGuild/index.html",
-    "precache-manifest.c9d90c8018c2def6e6612be743f6da7e.js": "/TeachersGuild/precache-manifest.c9d90c8018c2def6e6612be743f6da7e.js",
+    "precache-manifest.a1ed69dfebc5e153cc68180d85880d63.js": "/TeachersGuild/precache-manifest.a1ed69dfebc5e153cc68180d85880d63.js",
     "service-worker.js": "/TeachersGuild/service-worker.js",
     "static/css/main.a4c75231.chunk.css.map": "/TeachersGuild/static/css/main.a4c75231.chunk.css.map",
     "static/js/2.ec9c4afe.chunk.js.LICENSE.txt": "/TeachersGuild/static/js/2.ec9c4afe.chunk.js.LICENSE.txt",
@@ -19,7 +19,7 @@
     "static/media/About.module.scss": "/TeachersGuild/static/media/TheTeachersGuild_Impact_Report_2017_Page_01.089a3723.png",
     "static/media/carnegie-corporation.png": "/TeachersGuild/static/media/carnegie-corporation.b038cc3d.png",
     "static/media/centerbridge.png": "/TeachersGuild/static/media/centerbridge.fda7354c.png",
-    "static/media/chapter-kickoff.png": "/TeachersGuild/static/media/chapter-kickoff.7ea61e30.png",
+    "static/media/chapter-kickoff.jpg": "/TeachersGuild/static/media/chapter-kickoff.0c692284.jpg",
     "static/media/App.module.scss": "/TeachersGuild/static/media/neutra-text-tf-5871e0b0704ed.39400877.woff",
     "static/media/o.png": "/TeachersGuild/static/media/o.3bedf52a.png",
     "static/media/robbins_family.png": "/TeachersGuild/static/media/robbins_family.0706d435.png",
@@ -29,6 +29,6 @@
     "static/js/runtime-main.17ead4d3.js",
     "static/js/2.ec9c4afe.chunk.js",
     "static/css/main.a4c75231.chunk.css",
-    "static/js/main.082b11a3.chunk.js"
+    "static/js/main.b0ab5d26.chunk.js"
   ]
 }
