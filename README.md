@@ -1,5 +1,6 @@
-#React Project - The Teachers Guild
+# React Project - The Teachers Guild
 This project rebuild webstile.
+Only 2 pages work (Home,About)
 Show Project [Link](https://avivabachi.github.io/TeachersGuild/)
 
 ```
@@ -8,6 +9,5 @@ Show Project [Link](https://avivabachi.github.io/TeachersGuild/)
 ·Scss
 ·Bootsrap
 ```
-only 2 pages work (Home,About)
 
 The Original website [Link.](https://www.teachersguild.org/)
