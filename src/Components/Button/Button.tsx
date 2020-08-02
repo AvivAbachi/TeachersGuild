@@ -1,41 +1,36 @@
-import React, {Component} from 'react'
+import React, {Component} from 'react';
 import styles from './Button.module.scss';
 import appStyles from '../../App.module.scss';
-import GlobalData from "../../Services/GlobalData";
+import GlobalData from '../../Services/GlobalData';
 
-type aligments = ("center-div" | "left-align-div" | "right-align-div");
+type aligments = 'center-div' | 'left-align-div' | 'right-align-div';
 
 interface IProps {
-    link?: string;
-    label?: string;
-    aligment?: aligments;
-    disable?: boolean;
+  link?: string;
+  label?: string;
+  aligment?: aligments;
+  disable?: boolean;
 }
 
 interface IState {
-    link: string;
-    aligment: aligments;
-
+  link: string;
+  aligment: aligments;
 }
 
-export default class Button extends Component <IProps,
-    IState> {
+export default class Button extends Component<IProps, IState> {
+  constructor(props: any) {
+    super(props);
+    this.state = {
+      link: !props.disable && props.link ? props.link : GlobalData.noLink.toString(),
+      aligment: props.aligment == null ? 'center-div' : props.aligment,
+    };
+  }
 
-    constructor(props: any) {
-        super(props);
-        this.state = {
-            link: (!props.disable && props.link ? props.link : GlobalData.noLink.toString()),
-            aligment: (props.aligment == null ? "center-div" : props.aligment)
-        };
-    }
-
-    render() {
-        return (
-            <a
-                href={this.state.link}
-                className={styles.btn + " " + appStyles[this.state.aligment] + " " + (this.props.disable ? styles.btnDisabled : "")}>
-                {this.props.label}
-            </a>
-        )
-    }
+  render() {
+    return (
+      <a href={this.state.link} className={styles.btn + ' ' + appStyles[this.state.aligment] + ' ' + (this.props.disable ? styles.btnDisabled : '')}>
+        {this.props.label}
+      </a>
+    );
+  }
 }

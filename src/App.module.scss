@@ -4,12 +4,11 @@
 
 .App,
 .App-rtl {
-
   //@extend .font_UppercaseEnglish;
   background: white;
   color: $cDark;
   overflow: hidden;
-  font-family: 'NeutraText', 'DarkerGrotesque', Arial, sans-serif,;
+  font-family: 'NeutraText', 'DarkerGrotesque', Arial, sans-serif;
 }
 
 .App-rtl {
@@ -24,7 +23,6 @@
   margin-bottom: -100%;
 }
 
-
 .hide-alt-text {
   text-indent: 100%;
   white-space: nowrap;
@@ -32,7 +30,7 @@
 }
 
 .span-link {
-  color: #007BFF !important;
+  color: #007bff !important;
   cursor: pointer;
   text-decoration: underline;
   display: block;
@@ -40,7 +38,7 @@
 
 span-link:active,
 span-link:hover {
-  color: #00CCFF !important;
+  color: #00ccff !important;
 }
 
 .page {
@@ -87,16 +85,16 @@ span-link:hover {
 
 .left-align-div {
   margin-left: 0;
-  margin-right: auto ;
+  margin-right: auto;
 }
 
 .right-align-div {
-  margin-left: auto ;
-  margin-right: 0 ;
+  margin-left: auto;
+  margin-right: 0;
 }
 
 .vertical-center-parent {
-  position: relative ;
+  position: relative;
 }
 
 .vertical-center-child {

@@ -1,7 +1,7 @@
 export interface ICallbackActionProps {
-    clickCallback: any;
+  clickCallback: any;
 }
 
 export interface ICallCloseProps {
-    CallClose: any;
+  CallClose: any;
 }

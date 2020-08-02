@@ -1,21 +1,20 @@
-
 .Strip {
-    height: 680px;
-    background-position: 50% 50%;
-    background-size: cover;
-    background-repeat: no-repeat;
+  height: 680px;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .caption {
-    position: relative;
-    left: 32px;
-    color: white;
-    display: block;
-    width: 300px;
-    padding: 0.75em;
-    background: rgba(0, 0, 0, 0.25);
+  position: relative;
+  left: 32px;
+  color: white;
+  display: block;
+  width: 300px;
+  padding: 0.75em;
+  background: rgba(0, 0, 0, 0.25);
 }
 .insideDIV {
-    position: relative;
-    top: -250px;
-    margin-bottom: -250px;
+  position: relative;
+  top: -250px;
+  margin-bottom: -250px;
 }

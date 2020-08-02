@@ -1,46 +1,46 @@
 @import '../../Var.scss';
 
 .menu {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  .active {
+    align-items: center;
+    padding-top: 10px;
+    color: $cDark !important;
+    border-top: solid $cDark 6px;
+    cursor: default;
+  }
+  i {
+    margin-left: 8px;
+  }
+  a,
+  p {
     margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    .active {
-        align-items: center;
-        padding-top: 10px;
-        color: $cDark !important;
-        border-top: solid $cDark 6px;
-        cursor: default;
-    }
-    i {
-        margin-left: 8px;
-    }
-    a,
-    p {
-        margin: 0;
-        transition: color ease 0.2s;
-        font-size: 20px;
-        font-weight: 900;
-        cursor: pointer;
-        text-decoration: none !important;
-        display: inline-block;
-        text-align: center;
-        padding: 16px;
-    }
-    .notScroll {
-        color: $cDark;
-    }
-    .notScroll:hover {
-        color: $cYellow;
-    }
-    .scroll {
-        color: white;
-    }
-    .scroll:hover {
-        color: $cDark;
-    }
-     .notScroll+.active {
-        border-top: solid $cYellow 6px;
-        color: $cYellow !important;
-    }
+    transition: color ease 0.2s;
+    font-size: 20px;
+    font-weight: 900;
+    cursor: pointer;
+    text-decoration: none !important;
+    display: inline-block;
+    text-align: center;
+    padding: 16px;
+  }
+  .notScroll {
+    color: $cDark;
+  }
+  .notScroll:hover {
+    color: $cYellow;
+  }
+  .scroll {
+    color: white;
+  }
+  .scroll:hover {
+    color: $cDark;
+  }
+  .notScroll + .active {
+    border-top: solid $cYellow 6px;
+    color: $cYellow !important;
+  }
 }

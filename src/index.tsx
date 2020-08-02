@@ -1,31 +1,34 @@
 import React from 'react';
-// import ReactDOM from 'react-dom';
-import {hydrate, render} from "react-dom";
-import {Provider, useStaticRendering} from "mobx-react";
+import {hydrate, render} from 'react-dom';
+import {Provider, useStaticRendering} from 'mobx-react';
 import './index.module.scss';
 import App from './App';
 import GlobalStore from './GlobalStore';
 import * as serviceWorker from './serviceWorker';
 
-// ReactDOM.render(<App />, document.getElementById('root'));
-
-const staticRendering = navigator.userAgent === "ReactSnap";
+const staticRendering = navigator.userAgent === 'ReactSnap';
 if (staticRendering) {
-    console.log("MobX: static rendering");
-    useStaticRendering(true);
+  console.log('MobX: static rendering');
+  useStaticRendering(true);
 }
 
 const store = new GlobalStore();
 
 const rootElement: HTMLElement | null = document.getElementById('root');
 if (rootElement && rootElement.hasChildNodes()) {
-    hydrate(<Provider GlobalStore={store}>
-        <App/>
-    </Provider>, rootElement);
+  hydrate(
+    <Provider GlobalStore={store}>
+      <App />
+    </Provider>,
+    rootElement
+  );
 } else {
-    render(<Provider GlobalStore={store}>
-        <App/>
-    </Provider>, rootElement);
+  render(
+    <Provider GlobalStore={store}>
+      <App />
+    </Provider>,
+    rootElement
+  );
 }
 
 // navigator.userAgent != "ReactSnap"
