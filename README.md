@@ -31,6 +31,6 @@ To Visit App:
 - React
 - React-Router
 
-### Scss
+### SCSS
 
 - Reactstrap
