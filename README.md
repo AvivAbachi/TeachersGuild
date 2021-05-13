@@ -1,6 +1,6 @@
 # The Teachers Guild
 
-This project rebuild webstile whit some change ,The Original website [Link.](https://www.teachersguild.org/).
+This project rebuild webstile with some change ,The Original website [Link.](https://www.teachersguild.org/).
 
 Only 2 pages work - Home,About.
 
